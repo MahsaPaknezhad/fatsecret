@@ -1,0 +1,9 @@
+﻿model,region,input price,input price (cache read),output price
+us.amazon.nova-micro-v1:0,us-west-2,$0.0000350 ,$0.0000088 ,$0.0001400 
+us.amazon.nova-lite-v1:0,us-west-2,$0.0000600 ,$0.0000150 ,$0.0002400 
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,

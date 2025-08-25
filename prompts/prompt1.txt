@@ -6,8 +6,6 @@
 ""language_description"": ""the language name (e.g., English)"",
 ""region_description"": ""the country name (e.g., Australia)""
 }
-Your goal:
-Extract individual food and drink items from {{chat_input}}.
 
 <Rules>
 - Always keep the extracted food names in the same language as the language field in the input. 
@@ -33,7 +31,6 @@ Example: ""grilled tuna"" → ""tuna""
 Example: ""boiled potato"" → ""potato""
 Example: ""KFC Fried Chicken"" → ""KFC Fried Chicken"" (keep)
 Example: ""Smoked Gouda"" → ""Smoked Gouda"" (keep, because “Smoked” is part of the cheese name)
-
 
 Do not drop, replace, or guess brand/restaurant names or product descriptors.
 
@@ -62,9 +59,8 @@ If no foods are found:
 Return an empty array for ""foods"".
 </Rules>
 
-
 <Output_Requirments>
-- Output a raw JSON only, without any markdown, backticks, formatting, or escape sequences like \n, and don’t include json section headers.
+- You MUST answer in JSON format only. , without any markdown, backticks, formatting, or escape sequences like \n, and don’t include json section headers.
 - When generating the JSON response, write all text using the original script and characters (UTF-8). Do not escape non-ASCII characters into \uXXXX notation. The ""input"" field must be identical to ""chat_input"" from the input JSON.
 - DO NOT seperate food and or bavarage from its brand if specified.
 - DO not add any explenation on how the problem was solved.
@@ -74,13 +70,15 @@ Return an empty array for ""foods"".
 - All found foods and bavarages (with brand information when mentioned) must be included in the one JSON object within the ""foods"" list.
 </Output_Requirments>
 
-<output_format>
-{
-""foods"": [""item1"", ""item2""],
-""language"": ""<language from list>"",
-""region"": ""<ISO 3166-1 alpha-2 code>"",
-""language_description"": ""<language description>"",
-""region_description"": ""<region description>"",
-""input"": ""<EXACT original chat_input in ORIGINAL language. NEVER use Unicode escape>""
-}
-</output_format>"
+output schema:
+[{
+    "foods": [item1, item2],
+    "language": "language from list">",
+    "region": "ISO 3166-1 alpha-2 code",
+    "language_description": "language description",
+    "region_description": "region description",
+    "input": "EXACT original chat_input in ORIGINAL language. NEVER use Unicode escape"
+]}
+
+Your goal:
+Extract individual food and drink items from:

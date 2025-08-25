@@ -4,7 +4,7 @@ import boto3
 import time
 
 # Read system prompt
-with open('/home/ubuntu/projects/fatsecret/prompts/prompt3.txt', 'r', encoding='utf-8') as f:
+with open('/home/ubuntu/projects/fatsecret/prompts/prompt3_new.txt', 'r', encoding='utf-8') as f:
     system_prompt = f.read().strip().strip('"')
 
 # Read test data
@@ -14,34 +14,40 @@ test_data = df[['Prompt 3 - match sizes Input', 'Prompt 3 - match sizes Output']
 def invoke_batch(input_data):
     client = boto3.client("bedrock-runtime", region_name="us-west-2")
     try:
+        # Extract metadata keys to add back later
+        metadata_keys = ['input', 'language', 'language_description', 'region', 'region_description', 'include_servings']
+        metadata = {k: input_data[k] for k in metadata_keys if k in input_data}
         
-        # Extract common keys
-        common_keys = {k: input_data[k] for k in ['input', 'language', 'language_description', 'region', 'region_description'] if k in input_data}
-        # Remove common keys from input
-        model_input = {k: v for k, v in input_data.items() if k not in common_keys or k == "input"}
+        # Create minimal model input with only essential keys
+        model_input = {
+            'input': input_data['input'],
+            'foods': input_data['foods']
+        }
         
         user_message = json.dumps(model_input, indent=2)
         start_time = time.time()
+        
         response = client.converse(
             modelId="us.meta.llama4-maverick-17b-instruct-v1:0",
             messages=[{"role": "user", "content": [{"text": system_prompt.replace("{{foods}}", user_message)}]}],
-            inferenceConfig={"maxTokens": 2048, "temperature": 0.1, "topP": 0.9},
-            #performanceConfig = { "latency" : "optimized" }
+            inferenceConfig={"maxTokens": 2048, "temperature": 0.1, "topP": 0.9}
         )
+        
         invocation_time = time.time() - start_time
-        response_text = response["output"]["message"]["content"][0]["text"]
-        if response_text.strip().startswith('```'):
-            response_text = response_text.strip()
-            response_text = response_text[response_text.find('\n')+1:]  # Remove first line (```json)
-            response_text = response_text.rsplit('```', 1)[0]  # Remove closing ```
+        response_text = response["output"]["message"]["content"][0]["text"].strip()
+        
+        # Clean JSON response
+        if response_text.startswith('```'):
+            response_text = response_text.split('\n', 1)[1].rsplit('```', 1)[0]
+        
         response_json = json.loads(response_text)
         
-        # Merge common keys back into response
-        response_json.update(common_keys)
+        # Add metadata back to response
+        response_json.update(metadata)
         
         input_tokens = response["usage"]["inputTokens"]
         output_tokens = response["usage"]["outputTokens"]
-        cost = (input_tokens * 0.00024 / 1000) + (output_tokens * 0.00097 / 1000)
+        cost = (input_tokens * 0.00024 + output_tokens * 0.00097) / 1000
         
         return {
             "actual": response_json,
@@ -84,7 +90,7 @@ for row_idx, test_case in enumerate(test_data):
     if row_idx < len(test_data) - 1:
         time.sleep(3)
 
-with open('/home/ubuntu/projects/fatsecret/outputs/round3/3_match_sizes_batch_results.json', 'w') as f:
+with open('/home/ubuntu/projects/fatsecret/outputs/round4/3_match_sizes_batch_new.json', 'w') as f:
     json.dump(all_results, f, indent=2)
 
 print(f"Completed all {len(test_data)} rows")

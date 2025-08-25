@@ -1,0 +1,395 @@
+[
+  {
+    "row_index": 0,
+    "food_count": 6,
+    "invocation_time": 4.354194402694702,
+    "ingredients": {
+      "query": [
+        "I small avocado",
+        "1 keto bread with sugar free strawberries jam",
+        "1/2 cup hot water with 1/4 lemon juice and 1 tbsp chia seeds"
+      ],
+      "ingredients": [
+        {
+          "food_id": 33398452,
+          "food_name": "Keto White Bread",
+          "food_type": "Brand",
+          "brand_name": "Franz",
+          "match_accuracy": 100,
+          "eaten": {
+            "singular_description": "slice",
+            "plural_description": "slices",
+            "units": 1,
+            "metric_description": "g",
+            "per_unit_metric_amount": 30,
+            "total_metric_amount": 30,
+            "imperial_description": "oz",
+            "per_unit_imperial_amount": 1.058,
+            "total_imperial_amount": 1.058
+          },
+          "suggested_serving": {
+            "serving_id": "30116468",
+            "serving": "1 slice (30.000 g)",
+            "is_default": 1,
+            "number_of_units": 1
+          }
+        },
+        {
+          "food_id": 35752,
+          "food_name": "Avocados",
+          "food_type": "Generic",
+          "brand_name": "",
+          "match_accuracy": 100,
+          "eaten": {
+            "singular_description": "avocado",
+            "plural_description": "avocados",
+            "units": 1,
+            "metric_description": "g",
+            "per_unit_metric_amount": 136,
+            "total_metric_amount": 136,
+            "imperial_description": "oz",
+            "per_unit_imperial_amount": 4.8,
+            "total_imperial_amount": 4.8
+          },
+          "suggested_serving": {
+            "serving_id": "58483",
+            "serving": "100 g (100.000 g)",
+            "is_default": 1,
+            "number_of_units": 1.36
+          }
+        },
+        {
+          "food_id": 5526,
+          "food_name": "Strawberries with Sugar",
+          "food_type": "Generic",
+          "brand_name": "",
+          "match_accuracy": 100,
+          "eaten": {
+            "singular_description": "",
+            "plural_description": "",
+            "units": 1,
+            "metric_description": "g",
+            "per_unit_metric_amount": 174,
+            "total_metric_amount": 174,
+            "imperial_description": "oz",
+            "per_unit_imperial_amount": 6.14,
+            "total_imperial_amount": 6.14
+          },
+          "suggested_serving": {
+            "serving_id": "19417",
+            "serving": "1 cup sliced (174.000 g)",
+            "is_default": 1,
+            "number_of_units": 1
+          }
+        },
+        {
+          "food_id": 10811554,
+          "food_name": "Hot Water",
+          "food_type": "Generic",
+          "brand_name": "",
+          "match_accuracy": 100,
+          "eaten": {
+            "singular_description": "cup",
+            "plural_description": "cups",
+            "units": 0.5,
+            "metric_description": "ml",
+            "per_unit_metric_amount": 237,
+            "total_metric_amount": 118.5,
+            "imperial_description": "fl oz",
+            "per_unit_imperial_amount": 8,
+            "total_imperial_amount": 4
+          },
+          "suggested_serving": {
+            "serving_id": "10299006",
+            "serving": "1 cup (237.000 g)",
+            "is_default": 1,
+            "number_of_units": 0.5
+          }
+        },
+        {
+          "food_id": 35849,
+          "food_name": "Lemon Juice",
+          "food_type": "Generic",
+          "brand_name": "",
+          "match_accuracy": 100,
+          "eaten": {
+            "singular_description": "lemon",
+            "plural_description": "lemons",
+            "units": 0.25,
+            "metric_description": "ml",
+            "per_unit_metric_amount": 47,
+            "total_metric_amount": 11.75,
+            "imperial_description": "fl oz",
+            "per_unit_imperial_amount": 1.59,
+            "total_imperial_amount": 0.3975
+          },
+          "suggested_serving": {
+            "serving_id": "33134",
+            "serving": "1 lemon yields (47.000 g)",
+            "is_default": 1,
+            "number_of_units": 0.25
+          }
+        },
+        {
+          "food_id": 1328288,
+          "food_name": "Chia Seeds",
+          "food_type": "Brand",
+          "brand_name": "Spectrum",
+          "match_accuracy": 100,
+          "eaten": {
+            "singular_description": "tbsp",
+            "plural_description": "tbsp",
+            "units": 1,
+            "metric_description": "g",
+            "per_unit_metric_amount": 12,
+            "total_metric_amount": 12,
+            "imperial_description": "oz",
+            "per_unit_imperial_amount": 0.423,
+            "total_imperial_amount": 0.423
+          },
+          "suggested_serving": {
+            "serving_id": "1319171",
+            "serving": "1 tbsp (12.000 g)",
+            "is_default": 1,
+            "number_of_units": 1
+          }
+        }
+      ],
+      "language": "en",
+      "language_description": "English",
+      "region": "us",
+      "region_description": "United States"
+    },
+    "cost": 0.00171764,
+    "input_tokens": 2226,
+    "output_tokens": 1220
+  },
+  {
+    "row_index": 1,
+    "food_count": 7,
+    "invocation_time": null,
+    "ingredients": "ERROR: Unterminated string starting at: line 153 column 7 (char 5743)",
+    "cost": null,
+    "input_tokens": null,
+    "output_tokens": null
+  },
+  {
+    "row_index": 2,
+    "food_count": 1,
+    "invocation_time": 1.631650686264038,
+    "ingredients": {
+      "query": [
+        "I had a tablespoon of chia seeds"
+      ],
+      "ingredients": [
+        {
+          "food_id": 90178387,
+          "food_name": "Chia Seeds",
+          "food_type": "Generic",
+          "brand_name": "",
+          "match_accuracy": 100,
+          "eaten": {
+            "singular_description": "tablespoon",
+            "plural_description": "tablespoons",
+            "units": 1.0,
+            "metric_description": "g",
+            "per_unit_metric_amount": 13.0,
+            "total_metric_amount": 13.0,
+            "imperial_description": "oz",
+            "per_unit_imperial_amount": 0.459,
+            "total_imperial_amount": 0.459
+          },
+          "suggested_serving": {
+            "serving_id": "72405542",
+            "serving": "1 tbsp (13.000 g)",
+            "is_default": 1,
+            "serving_description": "1 tbsp",
+            "number_of_units": 1.0
+          }
+        }
+      ],
+      "language": "en",
+      "language_description": "English",
+      "region": "us",
+      "region_description": "United States"
+    },
+    "cost": 0.00055343,
+    "input_tokens": 1340,
+    "output_tokens": 239
+  },
+  {
+    "row_index": 3,
+    "food_count": 1,
+    "invocation_time": 1.680954933166504,
+    "ingredients": {
+      "query": [
+        "8 ounce of strawberry smoothie"
+      ],
+      "ingredients": [
+        {
+          "food_id": 23052323,
+          "food_name": "Strawberry Smoothie",
+          "food_type": "Generic",
+          "brand_name": "",
+          "match_accuracy": 100,
+          "eaten": {
+            "singular_description": "ounce",
+            "plural_description": "ounces",
+            "units": 8,
+            "metric_description": "ml",
+            "per_unit_metric_amount": 29.5735,
+            "total_metric_amount": 236.588,
+            "imperial_description": "fl oz",
+            "per_unit_imperial_amount": 1,
+            "total_imperial_amount": 8
+          },
+          "suggested_serving": {
+            "serving_id": "21565901",
+            "serving": "1 cup (202.000 g)",
+            "is_default": 1,
+            "serving_description": "1 cup",
+            "number_of_units": 1.168921052631579
+          }
+        }
+      ],
+      "language": "en",
+      "language_description": "English",
+      "region": "us",
+      "region_description": "United States"
+    },
+    "cost": 0.00056325,
+    "input_tokens": 1389,
+    "output_tokens": 237
+  },
+  {
+    "row_index": 4,
+    "food_count": 1,
+    "invocation_time": 1.347571611404419,
+    "ingredients": {
+      "query": [
+        "1 teaspoon of Jif peanut butter"
+      ],
+      "ingredients": [
+        {
+          "food_id": 302993,
+          "food_name": "Natural Creamy Peanut Butter",
+          "food_type": "Brand",
+          "brand_name": "Jif",
+          "match_accuracy": 100,
+          "eaten": {
+            "singular_description": "teaspoon",
+            "plural_description": "teaspoons",
+            "units": 1,
+            "metric_description": "g",
+            "per_unit_metric_amount": 5,
+            "total_metric_amount": 5,
+            "imperial_description": "oz",
+            "per_unit_imperial_amount": 0.17637,
+            "total_imperial_amount": 0.17637
+          },
+          "suggested_serving": {
+            "serving_id": "338024",
+            "serving": "2 tbsp (33.000 g)",
+            "is_default": 1,
+            "serving_description": "2 tbsp",
+            "number_of_units": 0.15151515151515152
+          }
+        }
+      ],
+      "language": "en",
+      "language_description": "English",
+      "region": "us",
+      "region_description": "United States"
+    },
+    "cost": 0.0005408,
+    "input_tokens": 1251,
+    "output_tokens": 248
+  },
+  {
+    "row_index": 5,
+    "food_count": 1,
+    "invocation_time": 1.4161362648010254,
+    "ingredients": {
+      "query": [
+        "2 cups of Trader Joe's low-fat kefir"
+      ],
+      "ingredients": [
+        {
+          "food_id": 14820902,
+          "food_name": "Low Fat Plain Kefir",
+          "food_type": "Brand",
+          "brand_name": "Trader Joe's",
+          "match_accuracy": 100,
+          "eaten": {
+            "singular_description": "cup",
+            "plural_description": "cups",
+            "units": 2.0,
+            "metric_description": "ml",
+            "per_unit_metric_amount": 240.0,
+            "total_metric_amount": 480.0,
+            "imperial_description": "fl oz",
+            "per_unit_imperial_amount": 8.0,
+            "total_imperial_amount": 16.0
+          },
+          "suggested_serving": {
+            "serving_id": "14019631",
+            "serving": "1 cup (240.000 ml)",
+            "is_default": 1,
+            "number_of_units": 2.0
+          }
+        }
+      ],
+      "language": "en",
+      "language_description": "english",
+      "region": "us",
+      "region_description": "united states"
+    },
+    "cost": 0.00053569,
+    "input_tokens": 1258,
+    "output_tokens": 241
+  },
+  {
+    "row_index": 6,
+    "food_count": 1,
+    "invocation_time": 1.7977561950683594,
+    "ingredients": {
+      "query": [
+        "5931804"
+      ],
+      "ingredients": [
+        {
+          "food_id": 5931804,
+          "food_name": "\u0422\u0432\u043e\u0440\u043e\u0433 (\u041e\u0431\u0435\u0437\u0436\u0438\u0440\u0435\u043d\u043d\u044b\u0439)",
+          "food_type": "Generic",
+          "brand_name": "",
+          "match_accuracy": 100,
+          "eaten": {
+            "singular_description": "\u0433",
+            "plural_description": "\u0433",
+            "units": 140,
+            "metric_description": "g",
+            "per_unit_metric_amount": 1,
+            "total_metric_amount": 140,
+            "imperial_description": "oz",
+            "per_unit_imperial_amount": 0.035274,
+            "total_imperial_amount": 4.93836
+          },
+          "suggested_serving": {
+            "serving_id": "5755616",
+            "serving": "100 \u0433 (100.000 \u0433)",
+            "is_default": 1,
+            "serving_description": "100 \u0433",
+            "number_of_units": 1.4
+          }
+        }
+      ],
+      "language": "ru",
+      "language_description": "russian",
+      "region": "ru",
+      "region_description": "russia"
+    },
+    "cost": 0.00061086,
+    "input_tokens": 1357,
+    "output_tokens": 294
+  }
+]
