@@ -1,0 +1,86 @@
+"The input is a JSON object with the following fields:
+{
+""chat_input"": ""a sentence describing what someone ate in a meal"",
+""language"": ""the language of the chat input"",
+""region"": ""the region of the chat input (ISO 3166-1 alpha-2 standard code)"",
+""language_description"": ""the language name (e.g., English)"",
+""region_description"": ""the country name (e.g., Australia)""
+}
+Your goal:
+Extract individual food and drink items from {{chat_input}}.
+
+<Rules>
+- Always keep the extracted food names in the same language as the language field in the input. 
+- Do not translate to another language. Never return input as a Unicode escape notation, always preserve local spelling, diacritics, and script.
+Return each item in nominative singular form according to the grammar of the input language.
+Examples:
+RU: ""стакан соевого молока"" → ""соевое молоко""
+ES: ""manzanas verdes"" → ""manzana verde""
+PT: ""batatas doces"" → ""batata doce""
+- Keep all brand and restaurant names exactly as they are commonly written for the region field in the input.
+- Extract complete INDIVIDUAL food and drink items exactly as they appear in the text, including:
+- Any brand or restaurant names directly before or after the food item.
+- Any descriptive modifiers directly before or after the food that describe the product and are part of the name (e.g., “96% fat-free”, “organic”, “low sodium”, “sugar-free”, “spicy”, “gluten-free”).
+
+Examples:
+- ""Hy-Vee roast beef deli slices 96% fat-free"" → ""Hy-Vee roast beef deli slices 96% fat-free""
+- ""Boar's Head turkey celery"" → ""Boar's Head turkey"", ""celery""
+- ""chicken nuggets from KFC"" → ""chicken nuggets KFC""
+
+- Always strip preparation or cooking conditions from the extracted food item, unless they are an inseparable part of a recognized product name or brand naming (e.g., “KFC Fried Chicken”, “Smoked Gouda” where “Smoked” is part of the cheese variety).
+Remove adjectives such as: boiled, fried, salted, marinated, baked, steamed, grilled, roasted, smoked, raw, poached, stir-fried, chargrilled, etc.
+Example: ""grilled tuna"" → ""tuna""
+Example: ""boiled potato"" → ""potato""
+Example: ""KFC Fried Chicken"" → ""KFC Fried Chicken"" (keep)
+Example: ""Smoked Gouda"" → ""Smoked Gouda"" (keep, because “Smoked” is part of the cheese name)
+
+
+Do not drop, replace, or guess brand/restaurant names or product descriptors.
+
+Remove:
+Serving sizes, numbers, or measurements.
+""two slices of pizza"" → ""pizza""
+""500ml Coke"" → ""Coke""
+
+Change:
+Plurals to singular:
+""carrots"" → ""carrot""
+
+Split items rules:
+- Split different food items if they are separated by “and”, “with”, commas, or sentence breaks, but keep brand + food + descriptors together as one item.
+
+Example:
+- ""hot water with lemon juice and chia seeds"" → ""hot water"", ""lemon juice"", ""chia seed""
+
+- If the input contains a general meal name (e.g., “salad”, “sandwich”, “soup”) followed by its specific ingredients, only extract the ingredients, not the general meal name. Absolutely always ensure no item is represented as both a composite generic dish and its individual parts.
+Example: ""I had a salad with chicken, lettuce, tomatoes, cucumbers"" → ""chicken"", ""lettuce"", ""tomato"", ""cucumber"" (exclude ""salad"")
+Example: ""pasta with tomato sauce and basil"" → ""pasta"", ""tomato sauce"", ""basil"" (keep ""pasta"" here because ingredients do not fully replace it)
+Only remove the general meal name if it would cause duplication with all its listed components.
+
+- Ignore non-food words unless they are part of the actual food name.
+If no foods are found:
+Return an empty array for ""foods"".
+</Rules>
+
+
+<Output_Requirments>
+- Output a raw JSON only, without any markdown, backticks, formatting, or escape sequences like \n, and don’t include json section headers.
+- When generating the JSON response, write all text using the original script and characters (UTF-8). Do not escape non-ASCII characters into \uXXXX notation. The ""input"" field must be identical to ""chat_input"" from the input JSON.
+- DO NOT seperate food and or bavarage from its brand if specified.
+- DO not add any explenation on how the problem was solved.
+- DO NOT output anything but the JSON output.
+- Brand/manufacturer name should never be resulted as a food item by itself.
+- Do not duplicate foods (e.g. ""I had 100 grams of grilled chicken"" should only return ""chuicken"".
+- All found foods and bavarages (with brand information when mentioned) must be included in the one JSON object within the ""foods"" list.
+</Output_Requirments>
+
+<output_format>
+{
+""foods"": [""item1"", ""item2""],
+""language"": ""<language from list>"",
+""region"": ""<ISO 3166-1 alpha-2 code>"",
+""language_description"": ""<language description>"",
+""region_description"": ""<region description>"",
+""input"": ""<EXACT original chat_input in ORIGINAL language. NEVER use Unicode escape>""
+}
+</output_format>"

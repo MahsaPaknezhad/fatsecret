@@ -1,0 +1,70 @@
+"The input is a stringified JSON object with the following fields:
+<fields>
+- input (string) – A sentence describing what someone ate in a meal.
+- language (string) – The language of the chat input, has to be one of the available languages listed bellow (e.g., ""en-uk"", ""fr"").
+- region (string) – The region of the chat input in ISO 3166-1 alpha-2 format (e.g., ""AU"").
+- language_description (string) – The full name of the language (e.g., ""English"").
+- region_description (string) – The full name of the country or region (e.g., ""Australia"").
+- foods (array) – A list of food query objects. Each object contains:
+-- query (string) – The exact food search term used.
+-- results (array) – A list of possible food matches. Each match contains:
+--- food_id (number) – The FatSecret food identifier.
+--- food_name (string) – The name of the food item.
+--- brand_name (string) – The brand or restaurant name.
+--- food_type (string) – The category of food (e.g., ""Brand"", ""Generic"").
+</fields>
+
+<availableLanguages>
+Available Languages:
+""ar"" for:   Arabic""
+""zh"" for:   Chinese""
+""zh-TW"" for:  Chinese (Traditional)""
+""da"" for:   Danish""
+""nl"" for:   Dutch""
+""en"" for:   English""
+""en-CA"" for:  English (Canada)""
+""en-UK"" for:  English (Regional)""
+""fi"" for:   Finnish""
+""fr"" for:   French""
+""de"" for:   German""
+""id"" for:   Indonesian""
+""it"" for:   Italian""
+""ja"" for:   Japanese""
+""ko"" for:   Korean""
+""nb"" for:   Norwegian""
+""pl"" for:   Polish""
+""pt"" for:   Portuguese""
+""pt-PT"" for:  Portuguese (Portugal)""
+""ru"" for:   Russian""
+""es"" for:   Spanish""
+""sv"" for:   Swedish""
+""tr"" for:   Turkish""
+""uk"" for: Ukrainian""
+</availableLanguages>
+
+JSON: {{search_results}}
+
+---### **Your Tasks** ####
+**1. Match Food** - Match each food query with only one food that is the most appropriate food in `foods.results` using these rules:
+- If Brand is mentioned: **exact food name + brand → exact generic food name → exact other brand → first search result.**
+- If no Brand is mentioned: **exact generic food name → exact branded food name → first search result.**
+- Prioritize **exact/direct matches** and consider language and region context.
+
+---### **Output** ####
+- Output must ONLY valid JSON object
+- Respond with only raw JSON, with no Markdown formatting, no code block markers, and no explanatory text- Ensure that the response is a valid JSON object. Do not include any text outside of the JSON object, such as 'json' at the beginning or any delimiters at the end. If the response does not strictly follow this format, it is considered incorrect. Any deviation from this format will result in an error.
+- DO NOT add ```json and ``` to the begnining and end of the response!
+- Output:
+- When generating the JSON, write all text using the original script and characters (UTF-8). Do not escape non-ASCII characters into \uXXXX notation. The ""input"" field must be identical to ""chat_input"" from the input JSON.
+
+The output object should be:
+{
+""input"": ""<original input>"",
+""food_ids"": [must be a json list of big int, one per query, of the exact/direct matches ids as a comma separated],
+""queries"": [must be a json list of strings, one per query],
+""language"": ""ONLY the language value from the list above"",
+""region"": ""ONLY the region value (ISO 3166-1 alpha-2 standard code) (e.g., en, en-au)"",
+""language_description"": ""the language description value (e.g., English, English (Regional), French)"",
+""region_description"": ""the region description value (e.g., Australia, United States, United Kingdom)"",
+""include_servings"" = ""defaultAndGrams""
+}"

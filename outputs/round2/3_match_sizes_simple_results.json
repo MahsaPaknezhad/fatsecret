@@ -1,0 +1,110 @@
+[
+  {
+    "food_query": 35849,
+    "actual": "{\"foods\": [\"avocado\", \"keto bread\", \"sugar free strawberries jam\", \"hot water\", \"lemon juice\", \"chia seed\"], \"language\": \"en\", \"region\": \"us\", \"language_description\": \"English\", \"region_description\": \"United States\", \"input\": \"I small avocado, 1 keto bread with sugar free strawberries jam. 1/2 cup hot water with 1/4 lemon juice and 1 tbsp chia seeds\"}",
+    "invocation_time": 1.3322432041168213,
+    "cost": 0.00048818
+  },
+  {
+    "food_query": 1328288,
+    "actual": "{\"foods\": [\"avocado\", \"keto bread\", \"sugar free strawberries jam\", \"hot water\", \"lemon juice\", \"chia seed\"], \"language\": \"en\", \"region\": \"us\", \"language_description\": \"English\", \"region_description\": \"United States\", \"input\": \"I small avocado, 1 keto bread with sugar free strawberries jam. 1/2 cup hot water with 1/4 lemon juice and 1 tbsp chia seeds\"}",
+    "invocation_time": 1.3519046306610107,
+    "cost": 0.0004445
+  },
+  {
+    "food_query": 35752,
+    "actual": "{\"foods\": [\"avocado\", \"keto bread\", \"sugar free strawberries jam\", \"hot water\", \"lemon juice\", \"chia seed\"], \"language\": \"en\", \"region\": \"us\", \"language_description\": \"English\", \"region_description\": \"United States\", \"input\": \"I small avocado, 1 keto bread with sugar free strawberries jam. 1/2 cup hot water with 1/4 lemon juice and 1 tbsp chia seeds\"}",
+    "invocation_time": 1.408928632736206,
+    "cost": 0.00045386
+  },
+  {
+    "food_query": 33398452,
+    "actual": "{\"foods\": [\"avocado\", \"keto bread\", \"sugar free strawberries jam\", \"hot water\", \"lemon juice\", \"chia seeds\"], \"language\": \"en\", \"region\": \"us\", \"language_description\": \"English\", \"region_description\": \"United States\", \"input\": \"I small avocado, 1 keto bread with sugar free strawberries jam. 1/2 cup hot water with 1/4 lemon juice and 1 tbsp chia seeds\"}",
+    "invocation_time": 1.3968403339385986,
+    "cost": 0.00044498
+  },
+  {
+    "food_query": 10811554,
+    "actual": "{\"foods\": [\"avocado\", \"keto bread\", \"sugar free strawberries jam\", \"hot water\", \"lemon juice\", \"chia seed\"], \"language\": \"en\", \"region\": \"us\", \"language_description\": \"English\", \"region_description\": \"United States\", \"input\": \"I small avocado, 1 keto bread with sugar free strawberries jam. 1/2 cup hot water with 1/4 lemon juice and 1 tbsp chia seeds\"}",
+    "invocation_time": 1.4114937782287598,
+    "cost": 0.00045458
+  },
+  {
+    "food_query": 5526,
+    "actual": "{\"foods\": [\"avocado\", \"keto bread\", \"sugar free strawberries jam\", \"hot water\", \"lemon juice\", \"chia seed\"], \"language\": \"en\", \"region\": \"us\", \"language_description\": \"English\", \"region_description\": \"United States\", \"input\": \"I small avocado, 1 keto bread with sugar free strawberries jam. 1/2 cup hot water with 1/4 lemon juice and 1 tbsp chia seeds\"}",
+    "invocation_time": 1.4320275783538818,
+    "cost": 0.00046586
+  },
+  {
+    "food_query": 302993,
+    "actual": "{\"foods\": [\"Jif peanut butter\"], \"language\": \"en\", \"region\": \"us\", \"language_description\": \"English\", \"region_description\": \"United States\", \"input\": \"1 teaspoon of Jif peanut butter\"}",
+    "invocation_time": 0.8297083377838135,
+    "cost": 0.00039073
+  },
+  {
+    "food_query": 23052323,
+    "actual": "{\"foods\": [\"strawberry smoothie\"], \"language\": \"en\", \"region\": \"us\", \"language_description\": \"English\", \"region_description\": \"United States\", \"input\": \"8 ounce of strawberry smoothie\"}",
+    "invocation_time": 1.0919811725616455,
+    "cost": 0.00042190999999999995
+  },
+  {
+    "food_query": 90178387,
+    "actual": "{\"foods\": [\"chia seed\"], \"language\": \"en\", \"region\": \"us\", \"language_description\": \"English\", \"region_description\": \"United States\", \"input\": \"I had a tablespoon of chia seeds\"}",
+    "invocation_time": 1.1701037883758545,
+    "cost": 0.00041014999999999997
+  },
+  {
+    "food_query": 7175,
+    "actual": "{\"foods\": [\"\\u044f\\u0438\\u0447\\u043d\\u0438\\u0446\\u0430\", \"\\u044f\\u0439\\u0446\\u043e\", \"\\u0440\\u0438\\u0441\\u043e\\u0432\\u044b\\u0439 \\u0445\\u043b\\u0435\\u0431\", \"\\u0442\\u0432\\u043e\\u0440\\u043e\\u0436\\u043d\\u044b\\u0439 \\u0441\\u044b\\u0440\", \"\\u043a\\u043e\\u0444\\u0435\", \"\\u0441\\u0430\\u0445\\u0430\\u0440\", \"\\u0441\\u043b\\u0438\\u0432\\u043a\\u0438\"], \"language\": \"ru\", \"region\": \"ru\", \"language_description\": \"russian\", \"region_description\": \"russia\", \"input\": \"\\u042f \\u0435\\u043b\\u0430 \\u044f\\u0438\\u0447\\u043d\\u0438\\u0446\\u0443 \\u0438\\u0437 \\u0434\\u0432\\u0443\\u0445 \\u044f\\u0439\\u0446 \\u043f\\u043e\\u0441\\u044b\\u043f\\u0430\\u043d\\u043d\\u0443\\u044e \\u0441\\u043e\\u043b\\u044c\\u044e \\u0441 \\u0442\\u0440\\u0430\\u0432\\u0430\\u043c\\u0438 \\u043e\\u0434\\u0438\\u043d \\u043b\\u043e\\u043c\\u0442\\u0438\\u043a \\u0440\\u0438\\u0441\\u043e\\u0432\\u044b\\u0439 \\u0445\\u043b\\u0435\\u0431 \\u0441 \\u0442\\u0432\\u043e\\u0440\\u043e\\u0436\\u043d\\u044b\\u043c \\u0441\\u044b\\u0440\\u043e\\u043c \\u0438 \\u043a\\u043e\\u0444\\u0435 \\u0441 \\u0441\\u0430\\u0445\\u0430\\u0440\\u043e\\u043c \\u0438 \\u0441\\u043b\\u0438\\u0432\\u043a\\u0430\\u043c\\u0438\"}",
+    "invocation_time": 4.341003656387329,
+    "cost": 0.0009343000000000001
+  },
+  {
+    "food_query": 33908,
+    "actual": "{\"foods\": [\"\\u044f\\u0438\\u0447\\u043d\\u0438\\u0446\\u0430\", \"\\u044f\\u0439\\u0446\\u043e\", \"\\u0441\\u043e\\u043b\\u044c\", \"\\u0442\\u0440\\u0430\\u0432\\u044b\", \"\\u0445\\u043b\\u0435\\u0431 \\u0440\\u0438\\u0441\\u043e\\u0432\\u044b\\u0439\", \"\\u0441\\u044b\\u0440 \\u0442\\u0432\\u043e\\u0440\\u043e\\u0436\\u043d\\u044b\\u0439\", \"\\u043a\\u043e\\u0444\\u0435\", \"\\u0441\\u0430\\u0445\\u0430\\u0440\", \"\\u0441\\u043b\\u0438\\u0432\\u043a\\u0438\"], \"language\": \"ru\", \"region\": \"ru\", \"language_description\": \"russian\", \"region_description\": \"russia\", \"input\": \"\\u042f \\u0435\\u043b\\u0430 \\u044f\\u0438\\u0447\\u043d\\u0438\\u0446\\u0443 \\u0438\\u0437 \\u0434\\u0432\\u0443\\u0445 \\u044f\\u0439\\u0446 \\u043f\\u043e\\u0441\\u044b\\u043f\\u0430\\u043d\\u043d\\u0443\\u044e \\u0441\\u043e\\u043b\\u044c\\u044e \\u0441 \\u0442\\u0440\\u0430\\u0432\\u0430\\u043c\\u0438 \\u043e\\u0434\\u0438\\u043d \\u043b\\u043e\\u043c\\u0442\\u0438\\u043a \\u0440\\u0438\\u0441\\u043e\\u0432\\u044b\\u0439 \\u0445\\u043b\\u0435\\u0431 \\u0441 \\u0442\\u0432\\u043e\\u0440\\u043e\\u0436\\u043d\\u044b\\u043c \\u0441\\u044b\\u0440\\u043e\\u043c \\u0438 \\u043a\\u043e\\u0444\\u0435 \\u0441 \\u0441\\u0430\\u0445\\u0430\\u0440\\u043e\\u043c \\u0438 \\u0441\\u043b\\u0438\\u0432\\u043a\\u0430\\u043c\\u0438\"}",
+    "invocation_time": 4.78571891784668,
+    "cost": 0.00098357
+  },
+  {
+    "food_query": 7397074,
+    "actual": "{\"foods\": [\"\\u044f\\u0438\\u0447\\u043d\\u0438\\u0446\\u0430\", \"\\u044f\\u0439\\u0446\\u043e\", \"\\u0441\\u043e\\u043b\\u044c\", \"\\u0442\\u0440\\u0430\\u0432\\u0430\", \"\\u043b\\u043e\\u043c\\u0442\\u0438\\u043a \\u0440\\u0438\\u0441\\u043e\\u0432\\u044b\\u0439 \\u0445\\u043b\\u0435\\u0431\", \"\\u0442\\u0432\\u043e\\u0440\\u043e\\u0436\\u043d\\u044b\\u0439 \\u0441\\u044b\\u0440\", \"\\u043a\\u043e\\u0444\\u0435\", \"\\u0441\\u0430\\u0445\\u0430\\u0440\", \"\\u0441\\u043b\\u0438\\u0432\\u043a\\u0438\"], \"language\": \"ru\", \"region\": \"ru\", \"language_description\": \"russian\", \"region_description\": \"russia\", \"input\": \"\\u042f \\u0435\\u043b\\u0430 \\u044f\\u0438\\u0447\\u043d\\u0438\\u0446\\u0443 \\u0438\\u0437 \\u0434\\u0432\\u0443\\u0445 \\u044f\\u0439\\u0446 \\u043f\\u043e\\u0441\\u044b\\u043f\\u0430\\u043d\\u043d\\u0443\\u044e \\u0441\\u043e\\u043b\\u044c\\u044e \\u0441 \\u0442\\u0440\\u0430\\u0432\\u0430\\u043c\\u0438 \\u043e\\u0434\\u0438\\u043d \\u043b\\u043e\\u043c\\u0442\\u0438\\u043a \\u0440\\u0438\\u0441\\u043e\\u0432\\u044b\\u0439 \\u0445\\u043b\\u0435\\u0431 \\u0441 \\u0442\\u0432\\u043e\\u0440\\u043e\\u0436\\u043d\\u044b\\u043c \\u0441\\u044b\\u0440\\u043e\\u043c \\u0438 \\u043a\\u043e\\u0444\\u0435 \\u0441 \\u0441\\u0430\\u0445\\u0430\\u0440\\u043e\\u043c \\u0438 \\u0441\\u043b\\u0438\\u0432\\u043a\\u0430\\u043c\\u0438\"}",
+    "invocation_time": 4.935561895370483,
+    "cost": 0.00099048
+  },
+  {
+    "food_query": 7331,
+    "actual": "{\"foods\": [\"\u044f\u0438\u0447\u043d\u0438\u0446\u0430 \u0438\u0437 \u0434\u0432\u0443\u0445 \u044f\u0438\u0446 \u043f\u043e\u0441\u044b\u043f\u0430\u043d\u043d\u0430\u044f \u0441\u043e\u043b\u044c\u044e \u0441 \u0442\u0440\u0430\u0432\u0430\u043c\u0438\", \"\u043b\u043e\u043c\u0442\u0438\u043a \u0440\u0438\u0441\u043e\u0432\u044b\u0439 \u0445\u043b\u0435\u0431 \u0441 \u0442\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u043c \u0441\u044b\u0440\u043e\u043c\", \"\u043a\u043e\u0444\u0435 \u0441 \u0441\u0430\u0445\u0430\u0440\u043e\u043c \u0438 \u0441\u043b\u0438\u0432\u043a\u0430\u043c\u0438\"], \"language\": \"ru\", \"region\": \"ru\", \"language_description\": \"russian\", \"region_description\": \"russia\", \"input\": \"\\u042f \\u0435\\u043b\\u0430 \\u044f\\u0438\\u0447\\u043d\\u0438\\u0446\\u0443 \\u0438\\u0437 \\u0434\\u0432\\u0443\\u0445 \\u044f\\u0439\\u0446 \\u043f\\u043e\\u0441\\u044b\\u043f\\u0430\\u043d\\u043d\\u0443\\u044e \\u0441\\u043e\\u043b\\u044c\\u044e \\u0441 \\u0442\\u0440\\u0430\\u0432\\u0430\\u043c\\u0438 \\u043e\\u0434\\u0438\\u043d \\u043b\\u043e\\u043c\\u0442\\u0438\\u043a \\u0440\\u0438\\u0441\\u043e\\u0432\\u044b\\u0439 \\u0445\\u043b\\u0435\\u0431 \\u0441 \\u0442\\u0432\\u043e\\u0440\\u043e\\u0436\\u043d\\u044b\\u043c \\u0441\\u044b\\u0440\\u043e\\u043c \\u0438 \\u043a\\u043e\\u0444\\u0435 \\u0441 \\u0441\\u0430\\u0445\\u0430\\u0440\\u043e\\u043c \\u0438 \\u0441\\u043b\\u0438\\u0432\\u043a\\u0430\\u043c\\u0438\"}",
+    "invocation_time": 3.88236665725708,
+    "cost": 0.0008248400000000001
+  },
+  {
+    "food_query": 39866,
+    "actual": "{\"foods\": [\"\\u044f\\u0438\\u0447\\u043d\\u0438\\u0446\\u0430 \\u0438\\u0437 \\u0434\\u0432\\u0443\\u0445 \\u044f\\u0439\\u0446 \\u043f\\u043e\\u0441\\u044b\\u043f\\u0430\\u043d\\u043d\\u0430\\u044f \\u0441\\u043e\\u043b\\u044c\\u044e \\u0441 \\u0442\\u0440\\u0430\\u0432\\u0430\\u043c\\u0438\", \"\\u0440\\u0438\\u0441\\u043e\\u0432\\u044b\\u0439 \\u0445\\u043b\\u0435\\u0431\", \"\\u0442\\u0432\\u043e\\u0440\\u043e\\u0436\\u043d\\u044b\\u0439 \\u0441\\u044b\\u0440\", \"\\u043a\\u043e\\u0444\\u0435 \\u0441 \\u0441\\u0430\\u0445\\u0430\\u0440\\u043e\\u043c \\u0438 \\u0441\\u043b\\u0438\\u0432\\u043a\\u0430\\u043c\\u0438\"], \"language\": \"ru\", \"region\": \"ru\", \"language_description\": \"russian\", \"region_description\": \"russia\", \"input\": \"\\u042f \\u0435\\u043b\\u0430 \\u044f\\u0438\\u0447\\u043d\\u0438\\u0446\\u0443 \\u0438\\u0437 \\u0434\\u0432\\u0443\\u0445 \\u044f\\u0439\\u0446 \\u043f\\u043e\\u0441\\u044b\\u043f\\u0430\\u043d\\u043d\\u0443\\u044e \\u0441\\u043e\\u043b\\u044c\\u044e \\u0441 \\u0442\\u0440\\u0430\\u0432\\u0430\\u043c\\u0438 \\u043e\\u0434\\u0438\\u043d \\u043b\\u043e\\u043c\\u0442\\u0438\\u043a \\u0440\\u0438\\u0441\\u043e\\u0432\\u044b\\u0439 \\u0445\\u043b\\u0435\\u0431 \\u0441 \\u0442\\u0432\\u043e\\u0440\\u043e\\u0436\\u043d\\u044b\\u043c \\u0441\\u044b\\u0440\\u043e\\u043c \\u0438 \\u043a\\u043e\\u0444\\u0435 \\u0441 \\u0441\\u0430\\u0445\\u0430\\u0440\\u043e\\u043c \\u0438 \\u0441\\u043b\\u0438\\u0432\\u043a\\u0430\\u043c\\u0438\"}",
+    "invocation_time": 5.44828462600708,
+    "cost": 0.00104169
+  },
+  {
+    "food_query": 5931804,
+    "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+    "invocation_time": null,
+    "cost": null
+  },
+  {
+    "food_query": 2811717,
+    "actual": "{\"foods\": [\"\\u044f\\u0438\\u0447\\u043d\\u0438\\u0446\\u0430\", \"\\u044f\\u0439\\u0446\\u043e\", \"\\u0440\\u0438\\u0441\\u043e\\u0432\\u044b\\u0439 \\u0445\\u043b\\u0435\\u0431\", \"\\u0442\\u0432\\u043e\\u0440\\u043e\\u0436\\u043d\\u044b\\u0439 \\u0441\\u044b\\u0440\", \"\\u043a\\u043e\\u0444\\u0435\", \"\\u0441\\u0430\\u0445\\u0430\\u0440\", \"\\u0441\\u043b\\u0438\\u0432\\u043a\\u0438\"], \"language\": \"ru\", \"region\": \"RU\", \"language_description\": \"russian\", \"region_description\": \"russia\", \"input\": \"\\u042f \\u0435\\u043b\\u0430 \\u044f\\u0438\\u0447\\u043d\\u0438\\u0446\\u0443 \\u0438\\u0437 \\u0434\\u0432\\u0443\\u0445 \\u044f\\u0439\\u0446 \\u043f\\u043e\\u0441\\u044b\\u043f\\u0430\\u043d\\u043d\\u0443\\u044e \\u0441\\u043e\\u043b\\u044c\\u044e \\u0441 \\u0442\\u0440\\u0430\\u0432\\u0430\\u043c\\u0438 \\u043e\\u0434\\u0438\\u043d \\u043b\\u043e\\u043c\\u0442\\u0438\\u043a \\u0440\\u0438\\u0441\\u043e\\u0432\\u044b\\u0439 \\u0445\\u043b\\u0435\\u0431 \\u0441 \\u0442\\u0432\\u043e\\u0440\\u043e\\u0436\\u043d\\u044b\\u043c \\u0441\\u044b\\u0440\\u043e\\u043c \\u0438 \\u043a\\u043e\\u0444\\u0435 \\u0441 \\u0441\\u0430\\u0445\\u0430\\u0440\\u043e\\u043c \\u0438 \\u0441\\u043b\\u0438\\u0432\\u043a\\u0430\\u043c\\u0438\"}",
+    "invocation_time": 4.838066101074219,
+    "cost": 0.0009443800000000001
+  },
+  {
+    "food_query": 3447997,
+    "actual": "{\"foods\": [\"\\u044f\\u0438\\u0447\\u043d\\u0438\\u0446\\u0430\", \"\\u044f\\u0439\\u0446\\u043e\", \"\\u0441\\u043e\\u043b\\u044c\", \"\\u0442\\u0440\\u0430\\u0432\\u0430\", \"\\u043b\\u043e\\u043c\\u0442\\u0438\\u043a \\u0440\\u0438\\u0441\\u043e\\u0432\\u044b\\u0439 \\u0445\\u043b\\u0435\\u0431\", \"\\u0442\\u0432\\u043e\\u0440\\u043e\\u0436\\u043d\\u044b\\u0439 \\u0441\\u044b\\u0440\", \"\\u043a\\u043e\\u0444\\u0435\", \"\\u0441\\u0430\\u0445\\u0430\\u0440\", \"\\u0441\\u043b\\u0438\\u0432\\u043a\\u0438\"], \"language\": \"ru\", \"region\": \"ru\", \"language_description\": \"russian\", \"region_description\": \"russia\", \"input\": \"\\u042f \\u0435\\u043b\\u0430 \\u044f\\u0438\\u0447\\u043d\\u0438\\u0446\\u0443 \\u0438\\u0437 \\u0434\\u0432\\u0443\\u0445 \\u044f\\u0439\\u0446 \\u043f\\u043e\\u0441\\u044b\\u043f\\u0430\\u043d\\u043d\\u0443\\u044e \\u0441\\u043e\\u043b\\u044c\\u044e \\u0441 \\u0442\\u0440\\u0430\\u0432\\u0430\\u043c\\u0438 \\u043e\\u0434\\u0438\\u043d \\u043b\\u043e\\u043c\\u0442\\u0438\\u043a \\u0440\\u0438\\u0441\\u043e\\u0432\\u044b\\u0439 \\u0445\\u043b\\u0435\\u0431 \\u0441 \\u0442\\u0432\\u043e\\u0440\\u043e\\u0436\\u043d\\u044b\\u043c \\u0441\\u044b\\u0440\\u043e\\u043c \\u0438 \\u043a\\u043e\\u0444\\u0435 \\u0441 \\u0441\\u0430\\u0445\\u0430\\u0440\\u043e\\u043c \\u0438 \\u0441\\u043b\\u0438\\u0432\\u043a\\u0430\\u043c\\u0438\"}",
+    "invocation_time": 5.026115655899048,
+    "cost": 0.0009952799999999999
+  },
+  {
+    "food_query": 14820902,
+    "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+    "invocation_time": null,
+    "cost": null
+  }
+]

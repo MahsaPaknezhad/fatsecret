@@ -1,0 +1,6 @@
+﻿model,region,input price,output price
+us.meta.llama4-maverick-17b-instruct-v1:0,us-west-2,"$0.00024 ","$0.00097 "
+openai.gpt-oss-20b-1:0,us-west-2,"$0.00007 ","$0.00030 "
+openai.gpt-oss-120b-1:0,us-west-2,"$0.00015 ","$0.00060 "
+us.meta.llama4-scout-17b-instruct-v1:0,us-west-2,"$0.00017 ","$0.00066 "
+us.amazon.nova-premier-v1:0,-we

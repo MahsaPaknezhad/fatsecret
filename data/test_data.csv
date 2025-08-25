@@ -1,0 +1,3413 @@
+﻿,Prompt 1 - Extract foods,,Lambda 1 - food search,,Prompt 2 - match foods,,Lambda 2 - Food get,,Prompt 3 - match sizes,,,,,,,,,,,,,,,,,
+,Input,Output,Input,,Input,Output,Input,Output,Input,Output,,,,,,,,,,,,,,,,
+Use this to test latency (US),"{ 
+""chat_input"": ""I had small avocado, 1 keto bread with sugar free strawberries jam. 1/2 cup hot water with 1/4 lemon juice and 1 tbsp chia seeds"", 
+""language"": ""en"", 
+""region"":""us"", 
+""language_description"": ""english"", 
+""region_description"":""united states""
+}","{
+""foods"": [""avocado"", ""keto bread"", ""strawberries jam"", ""hot water"", ""lemon juice"", ""chia seeds""],
+""language"": ""en"",
+""region"": ""us"",
+""language_description"": ""english"",
+""region_description"": ""united states"",
+""input"": ""I small avocado, 1 keto bread with sugar free strawberries jam. 1/2 cup hot water with 1/4 lemon juice and 1 tbsp chia seeds""
+}",<<,"{
+  ""input"": ""I small avocado, 1 keto bread with sugar free strawberries jam. 1/2 cup hot water with 1/4 lemon juice and 1 tbsp chia seeds"",
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""english"",
+  ""region_description"": ""united states"",
+  ""foods"": [
+    {
+      ""query"": ""keto bread"",
+      ""results"": [
+        {
+          ""food_id"": ""33398452"",
+          ""food_name"": ""Keto White Bread"",
+          ""brand_name"": ""Franz"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""70016958"",
+          ""food_name"": ""Keto Soft White Bread"",
+          ""brand_name"": ""Nature's Own"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""37342659"",
+          ""food_name"": ""Keto Friendly Bread"",
+          ""brand_name"": ""Natural Ovens Bakery"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""43913399"",
+          ""food_name"": ""Keto Friendly Wheat Bread"",
+          ""brand_name"": ""L'oven Fresh"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""43961835"",
+          ""food_name"": ""Keto Bread"",
+          ""brand_name"": ""Lewis Bake Shop"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""53189047"",
+          ""food_name"": ""Superior Keto Seeded Bread"",
+          ""brand_name"": ""Arnold"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""66509477"",
+          ""food_name"": ""Timber Wolf Keto Seeds Bread"",
+          ""brand_name"": ""Inked Bread"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""47121310"",
+          ""food_name"": ""Keto Bread"",
+          ""brand_name"": ""Oroweat"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""44856403"",
+          ""food_name"": ""Keto Bread"",
+          ""brand_name"": ""Healthy Life"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""59464216"",
+          ""food_name"": ""Keto Bread"",
+          ""brand_name"": ""Signature Select"",
+          ""food_type"": ""Brand""
+        }
+      ]
+    },
+    {
+      ""query"": ""avocado"",
+      ""results"": [
+        {
+          ""food_id"": ""66325"",
+          ""food_name"": ""Avocado"",
+          ""brand_name"": ""Calavo"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""35752"",
+          ""food_name"": ""Avocados"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""12010907"",
+          ""food_name"": ""Avocado"",
+          ""brand_name"": ""Del Monte"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""30152986"",
+          ""food_name"": ""Avocado"",
+          ""brand_name"": ""Avocados From Mexico"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""5387"",
+          ""food_name"": ""Avocado"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""270988"",
+          ""food_name"": ""Hass Avocado"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""16929465"",
+          ""food_name"": ""Teeny Tiny Avocado"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""997863"",
+          ""food_name"": ""Avocado"",
+          ""brand_name"": ""Mission"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""49208295"",
+          ""food_name"": ""Avocado Chunks"",
+          ""brand_name"": ""365"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""570638"",
+          ""food_name"": ""Avocado Halves"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        }
+      ]
+    },
+    {
+      ""query"": ""chia seeds"",
+      ""results"": [
+        {
+          ""food_id"": ""1328288"",
+          ""food_name"": ""Chia Seeds"",
+          ""brand_name"": ""Spectrum"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""15244941"",
+          ""food_name"": ""Chia Seeds"",
+          ""brand_name"": ""Simply Nature"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""90178387"",
+          ""food_name"": ""Chia Seeds"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""40902661"",
+          ""food_name"": ""Chia Seeds"",
+          ""brand_name"": ""Organic Great Value"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""104998318"",
+          ""food_name"": ""Chia Seeds"",
+          ""brand_name"": ""Tropical Smoothie Cafe"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""4198628"",
+          ""food_name"": ""Chia Seeds"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""1577014"",
+          ""food_name"": ""Organic Chia Seed"",
+          ""brand_name"": ""Nutiva"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""18215139"",
+          ""food_name"": ""Organic Whole Chia Seeds"",
+          ""brand_name"": ""Bob's Red Mill"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""20322003"",
+          ""food_name"": ""Chia Seeds"",
+          ""brand_name"": ""Goya"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""6725091"",
+          ""food_name"": ""Organic Chia Seeds"",
+          ""brand_name"": ""Nature's Intent"",
+          ""food_type"": ""Brand""
+        }
+      ]
+    },
+    {
+      ""query"": ""lemon juice"",
+      ""results"": [
+        {
+          ""food_id"": ""35849"",
+          ""food_name"": ""Lemon Juice"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""35850"",
+          ""food_name"": ""Lemon Juice (Canned or Bottled)"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""5286"",
+          ""food_name"": ""Fresh Lemon Juice"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""5285"",
+          ""food_name"": ""Lemon Juice"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""5977320"",
+          ""food_name"": ""100% Lemon Juice"",
+          ""brand_name"": ""Great Value"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""231092"",
+          ""food_name"": ""100% Natural Strength Lemon Juice from Concentrate"",
+          ""brand_name"": ""Realemon"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""13173715"",
+          ""food_name"": ""Lemon Juice"",
+          ""brand_name"": ""Sicilia"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""38898"",
+          ""food_name"": ""Ladyfingers Cookies (with Lemon Juice and Rind)"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""304007"",
+          ""food_name"": ""100% Lemon Juice"",
+          ""brand_name"": ""Nature's Nectar"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""8154443"",
+          ""food_name"": ""Lemon Juice"",
+          ""brand_name"": ""Italia Garden"",
+          ""food_type"": ""Brand""
+        }
+      ]
+    },
+    {
+      ""query"": ""strawberries jam"",
+      ""results"": [
+        {
+          ""food_id"": ""7200"",
+          ""food_name"": ""Jam Preserves"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""5526"",
+          ""food_name"": ""Strawberries with Sugar"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""5525"",
+          ""food_name"": ""Strawberries"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""5527"",
+          ""food_name"": ""Strawberries (Cooked or Canned)"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""5530"",
+          ""food_name"": ""Frozen Strawberries"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""5532"",
+          ""food_name"": ""Frozen Strawberries with Sugar"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""5531"",
+          ""food_name"": ""Unsweetened Frozen Strawberries"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""35976"",
+          ""food_name"": ""Strawberries"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""5529"",
+          ""food_name"": ""Strawberries in Syrup (Cooked or Canned)"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""5528"",
+          ""food_name"": ""Strawberries Unsweetened in Water Pack (Cooked or Canned)"",
+          ""food_type"": ""Generic""
+        }
+      ]
+    },
+    {
+      ""query"": ""hot water"",
+      ""results"": [
+        {
+          ""food_id"": ""10811554"",
+          ""food_name"": ""Hot Water"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""37922"",
+          ""food_name"": ""Water"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""6711"",
+          ""food_name"": ""Oriental Style Vegetable Combinations (Broccoli, Green Pepper,  Water Chestnuts, Fat Not Added in Cooking)"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""249979"",
+          ""food_name"": ""Skwinkles Watermelon Flavor Hot Candy Strips and Tamarind Flavor Sauce (Salsaghetti)"",
+          ""brand_name"": ""Lucas"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""35472"",
+          ""food_name"": ""Whole Wheat Hot Natural Cereal (with Salt, Cooked with Water)"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""7452978"",
+          ""food_name"": ""Tater Tot Casserole"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""6811"",
+          ""food_name"": ""Pickled Hot Pepper"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""36479"",
+          ""food_name"": ""Green Hot Chili Peppers (Excluding Seeds, Solids and Liquids, Canned)"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""35442"",
+          ""food_name"": ""Whole Wheat Hot Natural Cereal (Without Salt, Cooked with Water)"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""7690"",
+          ""food_name"": ""Hot Buttered Rum"",
+          ""food_type"": ""Generic""
+        }
+      ]
+    }
+  ]
+}",<<,"{
+  ""input"": ""I small avocado, 1 keto bread with sugar free strawberries jam. 1/2 cup hot water with 1/4 lemon juice and 1 tbsp chia seeds"",
+  ""food_ids"": [35752, 33398452, 1328288, 35849, 5526, 10811554],
+  ""queries"": [""avocado"", ""keto bread"", ""chia seeds"", ""lemon juice"", ""strawberries jam"", ""hot water""],
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""English"",
+  ""region_description"": ""United States"",
+  ""include_servings"": ""defaultAndGrams""
+}",<<,"{
+  ""input"": ""I small avocado, 1 keto bread with sugar free strawberries jam. 1/2 cup hot water with 1/4 lemon juice and 1 tbsp chia seeds"",
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""English"",
+  ""region_description"": ""United States"",
+  ""include_servings"": ""defaultAndGrams"",
+  ""foods"": [
+    {
+      ""query"": 33398452,
+      ""results"": [
+        {
+          ""food_id"": ""33398452"",
+          ""food_name"": ""Keto White Bread"",
+          ""brand_name"": ""Franz"",
+          ""food_type"": ""Brand"",
+          ""servings"": {
+            ""serving"": {
+              ""serving_id"": ""30116468"",
+              ""serving_description"": ""1 slice"",
+              ""is_default"": ""1"",
+              ""serving"": ""1 slice (30.000 g)""
+            }
+          }
+        }
+      ]
+    },
+    {
+      ""query"": 35752,
+      ""results"": [
+        {
+          ""food_id"": ""35752"",
+          ""food_name"": ""Avocados"",
+          ""food_type"": ""Generic"",
+          ""servings"": {
+            ""serving"": [
+              {
+                ""serving_id"": ""58483"",
+                ""serving_description"": ""100 g"",
+                ""is_default"": ""1"",
+                ""serving"": ""100 g (100.000 g)""
+              },
+              {
+                ""serving_id"": ""43671"",
+                ""serving_description"": ""1 oz"",
+                ""is_default"": ""0"",
+                ""serving"": ""1 oz (28.350 g)""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      ""query"": 1328288,
+      ""results"": [
+        {
+          ""food_id"": ""1328288"",
+          ""food_name"": ""Chia Seeds"",
+          ""brand_name"": ""Spectrum"",
+          ""food_type"": ""Brand"",
+          ""servings"": {
+            ""serving"": {
+              ""serving_id"": ""1319171"",
+              ""serving_description"": ""1 tbsp"",
+              ""is_default"": ""1"",
+              ""serving"": ""1 tbsp (12.000 g)""
+            }
+          }
+        }
+      ]
+    },
+    {
+      ""query"": 35849,
+      ""results"": [
+        {
+          ""food_id"": ""35849"",
+          ""food_name"": ""Lemon Juice"",
+          ""food_type"": ""Generic"",
+          ""servings"": {
+            ""serving"": [
+              {
+                ""serving_id"": ""33134"",
+                ""serving_description"": ""1 lemon yields"",
+                ""is_default"": ""1"",
+                ""serving"": ""1 lemon yields (47.000 g)""
+              },
+              {
+                ""serving_id"": ""58580"",
+                ""serving_description"": ""100 g"",
+                ""is_default"": ""0"",
+                ""serving"": ""100 g (100.000 g)""
+              },
+              {
+                ""serving_id"": ""1137126"",
+                ""serving_description"": ""100 ml"",
+                ""is_default"": ""0"",
+                ""serving"": ""100 ml (103.133 g)""
+              },
+              {
+                ""serving_id"": ""33133"",
+                ""serving_description"": ""1 fl oz"",
+                ""is_default"": ""0"",
+                ""serving"": ""1 fl oz (30.500 g)""
+              },
+              {
+                ""serving_id"": ""43768"",
+                ""serving_description"": ""1 oz"",
+                ""is_default"": ""0"",
+                ""serving"": ""1 oz (28.350 g)""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      ""query"": 5526,
+      ""results"": [
+        {
+          ""food_id"": ""5526"",
+          ""food_name"": ""Strawberries with Sugar"",
+          ""food_type"": ""Generic"",
+          ""servings"": {
+            ""serving"": [
+              {
+                ""serving_id"": ""19417"",
+                ""serving_description"": ""1 cup sliced"",
+                ""is_default"": ""1"",
+                ""serving"": ""1 cup sliced (174.000 g)""
+              },
+              {
+                ""serving_id"": ""54206"",
+                ""serving_description"": ""100 g"",
+                ""is_default"": ""0"",
+                ""serving"": ""100 g (100.000 g)""
+              },
+              {
+                ""serving_id"": ""183253"",
+                ""serving_description"": ""1 oz"",
+                ""is_default"": ""0"",
+                ""serving"": ""1 oz (28.350 g)""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      ""query"": 10811554,
+      ""results"": [
+        {
+          ""food_id"": ""10811554"",
+          ""food_name"": ""Hot Water"",
+          ""food_type"": ""Generic"",
+          ""servings"": {
+            ""serving"": [
+              {
+                ""serving_id"": ""10299006"",
+                ""serving_description"": ""1 cup"",
+                ""is_default"": ""1"",
+                ""serving"": ""1 cup (237.000 g)""
+              },
+              {
+                ""serving_id"": ""10299010"",
+                ""serving_description"": ""100 ml"",
+                ""is_default"": ""0"",
+                ""serving"": ""100 ml (100.090 g)""
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}",<<,"{
+  ""input"": ""I small avocado, 1 keto bread with sugar free strawberries jam. 1/2 cup hot water with 1/4 lemon juice and 1 tbsp chia seeds"",
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""English"",
+  ""region_description"": ""United States"",
+  ""query"": [
+    ""33398452"",
+    ""35752"",
+    ""1328288"",
+    ""35849"",
+    ""5526"",
+    ""10811554""
+  ],
+  ""ingredients"": [
+    {
+      ""food_id"": 35752,
+      ""food_name"": ""Avocados"",
+      ""food_type"": ""Generic"",
+      ""brand_name"": """",
+      ""match_accuracy"": 90,
+      ""eaten"": {
+        ""singular_description"": ""avocado"",
+        ""plural_description"": ""avocados"",
+        ""units"": 1.0,
+        ""metric_description"": ""g"",
+        ""per_unit_metric_amount"": 136.0,
+        ""total_metric_amount"": 136.0,
+        ""imperial_description"": ""oz"",
+        ""per_unit_imperial_amount"": 4.8,
+        ""total_imperial_amount"": 4.8
+      },
+      ""suggested_serving"": {
+        ""serving_id"": ""58483"",
+        ""serving"": ""100 g"",
+        ""is_default"": 1,
+        ""serving_description"": ""100 g"",
+        ""number_of_units"": 1.36
+      }
+    },
+    {
+      ""food_id"": 33398452,
+      ""food_name"": ""Keto White Bread"",
+      ""food_type"": ""Brand"",
+      ""brand_name"": ""Franz"",
+      ""match_accuracy"": 95,
+      ""eaten"": {
+        ""singular_description"": ""slice"",
+        ""plural_description"": ""slices"",
+        ""units"": 1.0,
+        ""metric_description"": ""g"",
+        ""per_unit_metric_amount"": 30.0,
+        ""total_metric_amount"": 30.0,
+        ""imperial_description"": ""oz"",
+        ""per_unit_imperial_amount"": 1.06,
+        ""total_imperial_amount"": 1.06
+      },
+      ""suggested_serving"": {
+        ""serving_id"": ""30116468"",
+        ""serving"": ""1 slice (30.000 g)"",
+        ""is_default"": 1,
+        ""serving_description"": ""1 slice"",
+        ""number_of_units"": 1.0
+      }
+    },
+    {
+      ""food_id"": 10811554,
+      ""food_name"": ""Hot Water"",
+      ""food_type"": ""Generic"",
+      ""brand_name"": """",
+      ""match_accuracy"": 100,
+      ""eaten"": {
+        ""singular_description"": ""cup"",
+        ""plural_description"": ""cups"",
+        ""units"": 0.5,
+        ""metric_description"": ""ml"",
+        ""per_unit_metric_amount"": 237.0,
+        ""total_metric_amount"": 118.5,
+        ""imperial_description"": ""fl oz"",
+        ""per_unit_imperial_amount"": 8.0,
+        ""total_imperial_amount"": 4.0
+      },
+      ""suggested_serving"": {
+        ""serving_id"": ""10299006"",
+        ""serving"": ""1 cup (237.000 g)"",
+        ""is_default"": 1,
+        ""serving_description"": ""1 cup"",
+        ""number_of_units"": 0.5
+      }
+    },
+    {
+      ""food_id"": 35849,
+      ""food_name"": ""Lemon Juice"",
+      ""food_type"": ""Generic"",
+      ""brand_name"": """",
+      ""match_accuracy"": 95,
+      ""eaten"": {
+        ""singular_description"": ""quarter"",
+        ""plural_description"": ""quarters"",
+        ""units"": 1.0,
+        ""metric_description"": ""ml"",
+        ""per_unit_metric_amount"": 11.75,
+        ""total_metric_amount"": 11.75,
+        ""imperial_description"": ""fl oz"",
+        ""per_unit_imperial_amount"": 0.4,
+        ""total_imperial_amount"": 0.4
+      },
+      ""suggested_serving"": {
+        ""serving_id"": ""33134"",
+        ""serving"": ""1 lemon yields (47.000 g)"",
+        ""is_default"": 1,
+        ""serving_description"": ""1 lemon yields"",
+        ""number_of_units"": 0.25
+      }
+    },
+    {
+      ""food_id"": 1328288,
+      ""food_name"": ""Chia Seeds"",
+      ""food_type"": ""Brand"",
+      ""brand_name"": ""Spectrum"",
+      ""match_accuracy"": 100,
+      ""eaten"": {
+        ""singular_description"": ""tbsp"",
+        ""plural_description"": ""tbsp"",
+        ""units"": 1.0,
+        ""metric_description"": ""g"",
+        ""per_unit_metric_amount"": 12.0,
+        ""total_metric_amount"": 12.0,
+        ""imperial_description"": ""oz"",
+        ""per_unit_imperial_amount"": 0.423,
+        ""total_imperial_amount"": 0.423
+      },
+      ""suggested_serving"": {
+        ""serving_id"": ""1319171"",
+        ""serving"": ""1 tbsp (12.000 g)"",
+        ""is_default"": 1,
+        ""serving_description"": ""1 tbsp"",
+        ""number_of_units"": 1.0
+      }
+    },
+    {
+      ""food_id"": 5526,
+      ""food_name"": ""Strawberries with Sugar"",
+      ""food_type"": ""Generic"",
+      ""brand_name"": """",
+      ""match_accuracy"": 80,
+      ""eaten"": {
+        ""singular_description"": ""jam"",
+        ""plural_description"": ""jams"",
+        ""units"": 1.0,
+        ""metric_description"": ""g"",
+        ""per_unit_metric_amount"": 174.0,
+        ""total_metric_amount"": 174.0,
+        ""imperial_description"": ""oz"",
+        ""per_unit_imperial_amount"": 6.14,
+        ""total_imperial_amount"": 6.14
+      },
+      ""suggested_serving"": {
+        ""serving_id"": ""19417"",
+        ""serving"": ""1 cup sliced (174.000 g)"",
+        ""is_default"": 1,
+        ""serving_description"": ""1 cup sliced"",
+        ""number_of_units"": 1.0
+      }
+    }
+  ]
+}",,,,,,,,,,,,,,,,
+"Use this to test latency (RU)
+
+The outputs must NOT come back as (UTF-16 code unit) format, it kills the latency. We have rules for that in each prompt but it's still happening","{ 
+""chat_input"": ""Я ела яичницу из двух яиц посыпанную солью с травами один ломтик рисовый хлеб с творожным сыром и кофе с сахаром и сливками"", 
+""language"": ""ru"", 
+""region"": ""ru"", 
+""language_description"": ""russian"", 
+""region_description"": ""russia""
+}","{
+""foods"": [""яичница"", ""соль"", ""травы"", ""рисовый хлеб"", ""творожный сыр"", ""кофе"", ""сахар"", ""сливки""],
+""language"": ""ru"",
+""region"": ""ru"",
+""language_description"": ""russian"",
+""region_description"": ""russia"",
+""input"": ""Я ела яичницу из двух яиц посыпанную солью с травами один ломтик рисовый хлеб с творожным сыром и кофе с сахаром и сливками""
+}",,"{
+  ""input"": ""Я ела яичницу из двух яиц посыпанную солью с травами один ломтик рисовый хлеб с творожным сыром и кофе с сахаром и сливками"",
+  ""language"": ""ru"",
+  ""region"": ""ru"",
+  ""language_description"": ""russian"",
+  ""region_description"": ""russia"",
+  ""foods"": [
+    {
+      ""query"": ""рисовый хлеб"",
+      ""results"": [
+        {
+          ""food_id"": ""51532392"",
+          ""food_name"": ""Рисовый Хлеб"",
+          ""brand_name"": ""Формула Хлеба"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""17202166"",
+          ""food_name"": ""Рисовый Хлеб"",
+          ""brand_name"": ""Хмельницкий"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""29131440"",
+          ""food_name"": ""Хлеб Рисовый"",
+          ""brand_name"": ""SPAR"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""38793"",
+          ""food_name"": ""Итальянский Хлеб"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""10877311"",
+          ""food_name"": ""Хлебец Рисовый"",
+          ""brand_name"": ""Dr. Korner"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""40779"",
+          ""food_name"": ""Саке"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""38794"",
+          ""food_name"": ""Мультизерновой Хлеб"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""57167692"",
+          ""food_name"": ""Хлеб Рисовый"",
+          ""brand_name"": ""На здоровье"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""39098"",
+          ""food_name"": ""Кукурузный Хлеб (Кукурузные Булочки) (из Сухой Смеси)"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""38798"",
+          ""food_name"": ""Хлеб Овсяной"",
+          ""food_type"": ""Generic""
+        }
+      ]
+    },
+    {
+      ""query"": ""травы"",
+      ""results"": [
+        {
+          ""food_id"": ""7397074"",
+          ""food_name"": ""Прованские Травы"",
+          ""brand_name"": ""Kamis"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""33906"",
+          ""food_name"": ""Укроп"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""15550993"",
+          ""food_name"": ""Травы для Салатов"",
+          ""brand_name"": ""Kotanyi"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""5829584"",
+          ""food_name"": ""Травы Итальянской Кухни"",
+          ""brand_name"": ""Kamis"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""33876"",
+          ""food_name"": ""Тмин"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""33915"",
+          ""food_name"": ""Каперсы"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""33918"",
+          ""food_name"": ""Мята"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""34369390"",
+          ""food_name"": ""Травы Греции"",
+          ""brand_name"": ""Kamis"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""33904"",
+          ""food_name"": ""Куркума длинная"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""33907"",
+          ""food_name"": ""Желтая Горчица"",
+          ""food_type"": ""Generic""
+        }
+      ]
+    },
+    {
+      ""query"": ""яичница"",
+      ""results"": [
+        {
+          ""food_id"": ""3096"",
+          ""food_name"": ""Жареное Яйцо"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""39866"",
+          ""food_name"": ""Яичница"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""26315615"",
+          ""food_name"": ""Яичница из Двух Яиц"",
+          ""brand_name"": ""Дело Вкуса"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""3114"",
+          ""food_name"": ""Омлет или Яичница"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""3097"",
+          ""food_name"": ""Жареное Яйцо без Жира"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""13134071"",
+          ""food_name"": ""Яичница с Помидорами"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""3130"",
+          ""food_name"": ""Омлет или Яичница с Колбасой"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""57590300"",
+          ""food_name"": ""Яичница"",
+          ""brand_name"": ""Магнолия"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""33801"",
+          ""food_name"": ""Яичница (с Целым Яйцом)"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""3119"",
+          ""food_name"": ""Омлет или Яичница с Ветчиной или Беконом"",
+          ""food_type"": ""Generic""
+        }
+      ]
+    },
+    {
+      ""query"": ""соль"",
+      ""results"": [
+        {
+          ""food_id"": ""33908"",
+          ""food_name"": ""Соль"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""58235809"",
+          ""food_name"": ""Соль Адыгейская"",
+          ""brand_name"": ""Магнит"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""298864"",
+          ""food_name"": ""Морская Соль"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""36875739"",
+          ""food_name"": ""Соль Розовая Гималайская"",
+          ""brand_name"": ""Волшебное Дерево"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""48379538"",
+          ""food_name"": ""Соль Пищевая с Пониженным Содержанием Натрия"",
+          ""brand_name"": ""Валетек"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""15323940"",
+          ""food_name"": ""Чеснок-Травы-Соль"",
+          ""brand_name"": ""Kotanyi"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""27476419"",
+          ""food_name"": ""Гималайская Соль с Прованскими Травами"",
+          ""brand_name"": ""Kotanyi"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""84009293"",
+          ""food_name"": ""Соль Вкусная"",
+          ""brand_name"": ""Рестория Шеф"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""57924525"",
+          ""food_name"": ""Морская Соль с Чесноком и Травами"",
+          ""brand_name"": ""Kamis"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""20940112"",
+          ""food_name"": ""Pink Salt Himalayan"",
+          ""brand_name"": ""Setra"",
+          ""food_type"": ""Brand""
+        }
+      ]
+    },
+    {
+      ""query"": ""кофе"",
+      ""results"": [
+        {
+          ""food_id"": ""7331"",
+          ""food_name"": ""Кофе"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""2479602"",
+          ""food_name"": ""Кофе с Молоком"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""37818"",
+          ""food_name"": ""Кофе (из Молотых Зерен)"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""7346"",
+          ""food_name"": ""Кофе с Сахаром"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""2479604"",
+          ""food_name"": ""Кофе с Молоком и Сахаром"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""37821"",
+          ""food_name"": ""Кофе (Растворимый)"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""7338239"",
+          ""food_name"": ""Американо"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""7350"",
+          ""food_name"": ""Капучино"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""7554"",
+          ""food_name"": ""Кофе Эспрессо"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""5284208"",
+          ""food_name"": ""Кофе 3 в 1 Классик"",
+          ""brand_name"": ""Nescafe"",
+          ""food_type"": ""Brand""
+        }
+      ]
+    },
+    {
+      ""query"": ""творожный сыр"",
+      ""results"": [
+        {
+          ""food_id"": ""2811717"",
+          ""food_name"": ""Творожный Сыр"",
+          ""brand_name"": ""Хохланд"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""22405330"",
+          ""food_name"": ""Творожный Сыр"",
+          ""brand_name"": ""Хохланд"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""24580358"",
+          ""food_name"": ""Творожный Сыр Сливочный"",
+          ""brand_name"": ""Almette"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""50995447"",
+          ""food_name"": ""Сыр Творожный Лёгкий"",
+          ""brand_name"": ""Sveza"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""2136938"",
+          ""food_name"": ""Творожный Сыр с Зеленью"",
+          ""brand_name"": ""Хохланд"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""56544484"",
+          ""food_name"": ""Воздушный Сыр Творожный"",
+          ""brand_name"": ""Sveza"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""33039739"",
+          ""food_name"": ""Сыр Творожный"",
+          ""brand_name"": ""Экомилк"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""35279820"",
+          ""food_name"": ""Творожный Сыр"",
+          ""brand_name"": ""Violife"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""7446165"",
+          ""food_name"": ""Сыр Творожный"",
+          ""brand_name"": ""Президент"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""7207349"",
+          ""food_name"": ""Творожный Сыр Сливочный"",
+          ""brand_name"": ""Альметте"",
+          ""food_type"": ""Brand""
+        }
+      ]
+    },
+    {
+      ""query"": ""сахар"",
+      ""results"": [
+        {
+          ""food_id"": ""7175"",
+          ""food_name"": ""Сахар"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""23567048"",
+          ""food_name"": ""Сахар"",
+          ""brand_name"": ""Пятерочка"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""39559"",
+          ""food_name"": ""Сахарный Песок"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""7144407"",
+          ""food_name"": ""Рафинад"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""9534377"",
+          ""food_name"": ""Сахар"",
+          ""brand_name"": ""Макдоналдс"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""24893461"",
+          ""food_name"": ""Сахар Белый"",
+          ""brand_name"": ""365 Дней"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""18219414"",
+          ""food_name"": ""Сахарный Песок"",
+          ""brand_name"": ""Русский Сахар"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""7105"",
+          ""food_name"": ""Белый Сахар (Гранулированный или Кусковой)"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""39558"",
+          ""food_name"": ""Коричневый Сахар"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""14252720"",
+          ""food_name"": ""Сахар Белый Кристаллический"",
+          ""brand_name"": ""Русский Сахар"",
+          ""food_type"": ""Brand""
+        }
+      ]
+    },
+    {
+      ""query"": ""сливки"",
+      ""results"": [
+        {
+          ""food_id"": ""3447997"",
+          ""food_name"": ""Сливки 10%"",
+          ""brand_name"": ""Простоквашино"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""5675746"",
+          ""food_name"": ""Сливки Порционные"",
+          ""brand_name"": ""Campina"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""2952330"",
+          ""food_name"": ""Сливки 20%"",
+          ""brand_name"": ""Простоквашино"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""5392240"",
+          ""food_name"": ""Сливки 33%"",
+          ""brand_name"": ""Белый Город"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""6629568"",
+          ""food_name"": ""Сливки 10%"",
+          ""brand_name"": ""Домик в деревне"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""4942580"",
+          ""food_name"": ""Сливки 20%"",
+          ""brand_name"": ""Домик в деревне"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""8792715"",
+          ""food_name"": ""Сливки 33%"",
+          ""brand_name"": ""Петмол"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""1080"",
+          ""food_name"": ""Жирные Сливки"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""8618398"",
+          ""food_name"": ""Сливки 10%"",
+          ""brand_name"": ""Село Зелёное"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""5780675"",
+          ""food_name"": ""Сливки 10%"",
+          ""brand_name"": ""Авида"",
+          ""food_type"": ""Brand""
+        }
+      ]
+    }
+  ]
+}",,"{
+  ""input"": ""Я ела яичницу из двух яиц, посыпанную солью с травами, один ломтик рисовый хлеб с творожным сыром и кофе с сахаром и сливками"",
+  ""food_ids"": [39866, 7397074, 33908, 7331, 2811717, 7175, 3447997],
+  ""queries"": [""яичница"", ""травы"", ""соль"", ""кофе"", ""творожный сыр"", ""сахар"", ""сливки""],
+  ""language"": ""ru"",
+  ""region"": ""ru"",
+  ""language_description"": ""russian"",
+  ""region_description"": ""russia"",
+  ""include_servings"": ""defaultAndGrams""
+}",,"{
+  ""input"": ""Я ела яичницу из двух яйц посыпанную солью с травами один ломтик рисовый хлеб с творожным сыром и кофе с сахаром и сливками"",
+  ""language"": ""ru"",
+  ""region"": ""ru"",
+  ""language_description"": ""russian"",
+  ""region_description"": ""russia"",
+  ""include_servings"": ""defaultAndGrams"",
+  ""foods"": [
+    {
+      ""query"": 39866,
+      ""results"": [
+        {
+          ""food_id"": ""39866"",
+          ""food_name"": ""Яичница"",
+          ""food_type"": ""Generic"",
+          ""servings"": {
+            ""serving"": {
+              ""serving_id"": ""40472"",
+              ""serving_description"": ""2 яйца"",
+              ""is_default"": ""1"",
+              ""serving"": ""2 яйца (94.000 г)""
+            }
+          }
+        }
+      ]
+    },
+    {
+      ""query"": 7397074,
+      ""results"": [
+        {
+          ""food_id"": ""7397074"",
+          ""food_name"": ""Прованские Травы"",
+          ""brand_name"": ""Kamis"",
+          ""food_type"": ""Brand"",
+          ""servings"": {
+            ""serving"": {
+              ""serving_id"": ""7133790"",
+              ""serving_description"": ""100г"",
+              ""is_default"": ""1"",
+              ""serving"": ""100г (100.000 г)""
+            }
+          }
+        }
+      ]
+    },
+    {
+      ""query"": 33908,
+      ""results"": [
+        {
+          ""food_id"": ""33908"",
+          ""food_name"": ""Соль"",
+          ""food_type"": ""Generic"",
+          ""servings"": {
+            ""serving"": {
+              ""serving_id"": ""29654"",
+              ""serving_description"": ""1 небольшая щепотка"",
+              ""is_default"": ""1"",
+              ""serving"": ""1 небольшая щепотка (0.400 г)""
+            }
+          }
+        }
+      ]
+    },
+    {
+      ""query"": 7175,
+      ""results"": [
+        {
+          ""food_id"": ""7175"",
+          ""food_name"": ""Сахар"",
+          ""food_type"": ""Generic"",
+          ""servings"": {
+            ""serving"": {
+              ""serving_id"": ""27026"",
+              ""serving_description"": ""1 ч.л."",
+              ""is_default"": ""1"",
+              ""serving"": ""1 ч.л. (4.200 г)""
+            }
+          }
+        }
+      ]
+    },
+    {
+      ""query"": 7331,
+      ""results"": [
+        {
+          ""food_id"": ""7331"",
+          ""food_name"": ""Кофе"",
+          ""food_type"": ""Generic"",
+          ""servings"": {
+            ""serving"": {
+              ""serving_id"": ""27699"",
+              ""serving_description"": ""1 кружка (240 мл)"",
+              ""is_default"": ""1"",
+              ""serving"": ""1 кружка (240 мл) (237.000 г)""
+            }
+          }
+        }
+      ]
+    },
+    {
+      ""query"": 2811717,
+      ""results"": [
+        {
+          ""food_id"": ""2811717"",
+          ""food_name"": ""Творожный Сыр"",
+          ""brand_name"": ""Хохланд"",
+          ""food_type"": ""Brand"",
+          ""servings"": {
+            ""serving"": {
+              ""serving_id"": ""2739553"",
+              ""serving_description"": ""100г"",
+              ""is_default"": ""1"",
+              ""serving"": ""100г (100.000 г)""
+            }
+          }
+        }
+      ]
+    },
+    {
+      ""query"": 3447997,
+      ""results"": [
+        {
+          ""food_id"": ""3447997"",
+          ""food_name"": ""Сливки 10%"",
+          ""brand_name"": ""Простоквашино"",
+          ""food_type"": ""Brand"",
+          ""servings"": {
+            ""serving"": {
+              ""serving_id"": ""3353970"",
+              ""serving_description"": ""100мл"",
+              ""is_default"": ""1"",
+              ""serving"": ""100мл (100.000 мл)""
+            }
+          }
+        }
+      ]
+    }
+  ]
+}",,"{
+    ""input"": ""Я ела яичницу из двух яйц посыпанную солью с травами один ломтик рисовый хлеб с творожным сыром и кофе с сахаром и сливками"",
+    ""language"": ""ru"",
+    ""region"": ""ru"",
+    ""language_description"": ""russian"",
+    ""region_description"": ""russia"",
+    ""query"": [
+        ""39866"",
+        ""7397074"",
+        ""33908"",
+        ""7175"",
+        ""7331"",
+        ""2811717"",
+        ""3447997""
+    ],
+    ""ingredients"": [
+        {
+            ""food_id"": 39866,
+            ""food_name"": ""Яичница"",
+            ""food_type"": ""Generic"",
+            ""brand_name"": """",
+            ""match_accuracy"": 100,
+            ""eaten"": {
+                ""singular_description"": ""яйцо"",
+                ""plural_description"": ""яйца"",
+                ""units"": 2,
+                ""metric_description"": ""g"",
+                ""per_unit_metric_amount"": 47,
+                ""total_metric_amount"": 94,
+                ""imperial_description"": ""oz"",
+                ""per_unit_imperial_amount"": 1.66,
+                ""total_imperial_amount"": 3.32
+            },
+            ""suggested_serving"": {
+                ""serving_id"": ""40472"",
+                ""serving"": ""2 яйца (94.000 г)"",
+                ""is_default"": 1,
+                ""serving_description"": ""2 яйца"",
+                ""number_of_units"": 1
+            }
+        },
+        {
+            ""food_id"": 7397074,
+            ""food_name"": ""Прованские Травы"",
+            ""food_type"": ""Brand"",
+            ""brand_name"": ""Kamis"",
+            ""match_accuracy"": 100,
+            ""eaten"": {
+                ""singular_description"": """",
+                ""plural_description"": ""травами"",
+                ""units"": 1,
+                ""metric_description"": ""g"",
+                ""per_unit_metric_amount"": 1,
+                ""total_metric_amount"": 1,
+                ""imperial_description"": ""oz"",
+                ""per_unit_imperial_amount"": 0.035,
+                ""total_imperial_amount"": 0.035
+            },
+            ""suggested_serving"": {
+                ""serving_id"": ""7133790"",
+                ""serving"": ""100г (100.000 г)"",
+                ""is_default"": 1,
+                ""serving_description"": ""100г"",
+                ""number_of_units"": 0.01
+            }
+        },
+        {
+            ""food_id"": 33908,
+            ""food_name"": ""Соль"",
+            ""food_type"": ""Generic"",
+            ""brand_name"": """",
+            ""match_accuracy"": 100,
+            ""eaten"": {
+                ""singular_description"": ""щепотка"",
+                ""plural_description"": ""щепотки"",
+                ""units"": 1,
+                ""metric_description"": ""g"",
+                ""per_unit_metric_amount"": 0.4,
+                ""total_metric_amount"": 0.4,
+                ""imperial_description"": ""oz"",
+                ""per_unit_imperial_amount"": 0.014,
+                ""total_imperial_amount"": 0.014
+            },
+            ""suggested_serving"": {
+                ""serving_id"": ""29654"",
+                ""serving"": ""1 небольшая щепотка (0.400 г)"",
+                ""is_default"": 1,
+                ""serving_description"": ""1 небольшая щепотка"",
+                ""number_of_units"": 1
+            }
+        },
+        {
+            ""food_id"": 7175,
+            ""food_name"": ""Сахар"",
+            ""food_type"": ""Generic"",
+            ""brand_name"": """",
+            ""match_accuracy"": 100,
+            ""eaten"": {
+                ""singular_description"": ""ч.л."",
+                ""plural_description"": ""ч.л."",
+                ""units"": 1,
+                ""metric_description"": ""g"",
+                ""per_unit_metric_amount"": 4.2,
+                ""total_metric_amount"": 4.2,
+                ""imperial_description"": ""oz"",
+                ""per_unit_imperial_amount"": 0.148,
+                ""total_imperial_amount"": 0.148
+            },
+            ""suggested_serving"": {
+                ""serving_id"": ""27026"",
+                ""serving"": ""1 ч.л. (4.200 г)"",
+                ""is_default"": 1,
+                ""serving_description"": ""1 ч.л."",
+                ""number_of_units"": 1
+            }
+        },
+        {
+            ""food_id"": 7331,
+            ""food_name"": ""Кофе"",
+            ""food_type"": ""Generic"",
+            ""brand_name"": """",
+            ""match_accuracy"": 100,
+            ""eaten"": {
+                ""singular_description"": ""кружка"",
+                ""plural_description"": ""кружки"",
+                ""units"": 1,
+                ""metric_description"": ""ml"",
+                ""per_unit_metric_amount"": 237,
+                ""total_metric_amount"": 237,
+                ""imperial_description"": ""fl oz"",
+                ""per_unit_imperial_amount"": 8,
+                ""total_imperial_amount"": 8
+            },
+            ""suggested_serving"": {
+                ""serving_id"": ""27699"",
+                ""serving"": ""1 кружка (240 мл) (237.000 г)"",
+                ""is_default"": 1,
+                ""serving_description"": ""1 кружка (240 мл)"",
+                ""number_of_units"": 1
+            }
+        },
+        {
+            ""food_id"": 2811717,
+            ""food_name"": ""Творожный Сыр"",
+            ""food_type"": ""Brand"",
+            ""brand_name"": ""Хохланд"",
+            ""match_accuracy"": 100,
+            ""eaten"": {
+                ""singular_description"": ""ломтик"",
+                ""plural_description"": ""ломтики"",
+                ""units"": 1,
+                ""metric_description"": ""g"",
+                ""per_unit_metric_amount"": 100,
+                ""total_metric_amount"": 100,
+                ""imperial_description"": ""oz"",
+                ""per_unit_imperial_amount"": 3.53,
+                ""total_imperial_amount"": 3.53
+            },
+            ""suggested_serving"": {
+                ""serving_id"": ""2739553"",
+                ""serving"": ""100г (100.000 г)"",
+                ""is_default"": 1,
+                ""serving_description"": ""100г"",
+                ""number_of_units"": 1
+            }
+        },
+        {
+            ""food_id"": 3447997,
+            ""food_name"": ""Сливки 10%"",
+            ""food_type"": ""Brand"",
+            ""brand_name"": ""Простоквашино"",
+            ""match_accuracy"": 100,
+            ""eaten"": {
+                ""singular_description"": """",
+                ""plural_description"": ""сливками"",
+                ""units"": 1,
+                ""metric_description"": ""ml"",
+                ""per_unit_metric_amount"": 100,
+                ""total_metric_amount"": 100,
+                ""imperial_description"": ""fl oz"",
+                ""per_unit_imperial_amount"": 3.38,
+                ""total_imperial_amount"": 3.38
+            },
+            ""suggested_serving"": {
+                ""serving_id"": ""3353970"",
+                ""serving"": ""100мл (100.000 мл)"",
+                ""is_default"": 1,
+                ""serving_description"": ""100мл"",
+                ""number_of_units"": 1
+            }
+        }
+    ]
+}",,,,,,,,,,,,,,,,
+"- select generic, 
+- match serving description (tablespoon match to tbsp)","{
+""foods"": [""chia seeds""],
+""language"": ""en"",
+""region"": ""us"",
+""language_description"": ""english"",
+""region_description"": ""united states"",
+""input"": ""I had a tablespoon of chia seeds""
+}","{
+""foods"": [""chia seeds""],
+""language"": ""en"",
+""region"": ""us"",
+""language_description"": ""english"",
+""region_description"": ""united states"",
+""input"": ""I had a tablespoon of chia seeds""
+}",,"{
+  ""input"": ""I had a tablespoon of chia seeds"",
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""english"",
+  ""region_description"": ""united states"",
+  ""foods"": [
+    {
+      ""query"": ""chia seeds"",
+      ""results"": [
+        {
+          ""food_id"": ""1328288"",
+          ""food_name"": ""Chia Seeds"",
+          ""brand_name"": ""Spectrum"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""15244941"",
+          ""food_name"": ""Chia Seeds"",
+          ""brand_name"": ""Simply Nature"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""90178387"",
+          ""food_name"": ""Chia Seeds"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""40902661"",
+          ""food_name"": ""Chia Seeds"",
+          ""brand_name"": ""Organic Great Value"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""104998318"",
+          ""food_name"": ""Chia Seeds"",
+          ""brand_name"": ""Tropical Smoothie Cafe"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""4198628"",
+          ""food_name"": ""Chia Seeds"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""1577014"",
+          ""food_name"": ""Organic Chia Seed"",
+          ""brand_name"": ""Nutiva"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""18215139"",
+          ""food_name"": ""Organic Whole Chia Seeds"",
+          ""brand_name"": ""Bob's Red Mill"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""20322003"",
+          ""food_name"": ""Chia Seeds"",
+          ""brand_name"": ""Goya"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""6725091"",
+          ""food_name"": ""Organic Chia Seeds"",
+          ""brand_name"": ""Nature's Intent"",
+          ""food_type"": ""Brand""
+        }
+      ]
+    }
+  ]
+}",,"{
+  ""input"": ""I had a tablespoon of chia seeds"",
+  ""food_ids"": [90178387],
+  ""queries"": [""chia seeds""],
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""English"",
+  ""region_description"": ""United States"",
+  ""include_servings"": ""defaultAndGrams""
+}",,"{
+  ""input"": ""I had a tablespoon of chia seeds"",
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""English"",
+  ""region_description"": ""United States"",
+  ""include_servings"": ""defaultAndGrams"",
+  ""foods"": [
+    {
+      ""query"": 90178387,
+      ""results"": [
+        {
+          ""food_id"": ""90178387"",
+          ""food_name"": ""Chia Seeds"",
+          ""food_type"": ""Generic"",
+          ""servings"": {
+            ""serving"": [
+              {
+                ""serving_id"": ""72405542"",
+                ""serving_description"": ""1 tbsp"",
+                ""is_default"": ""1"",
+                ""serving"": ""1 tbsp (13.000 g)""
+              },
+              {
+                ""serving_id"": ""72405544"",
+                ""serving_description"": ""100 g"",
+                ""is_default"": ""0"",
+                ""serving"": ""100 g (100.000 g)""
+              },
+              {
+                ""serving_id"": ""72405545"",
+                ""serving_description"": ""1 oz"",
+                ""is_default"": ""0"",
+                ""serving"": ""1 oz (28.350 g)""
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}",,"{
+    ""input"": ""I had a tablespoon of chia seeds"",
+    ""language"": ""en"",
+    ""region"": ""us"",
+    ""language_description"": ""English"",
+    ""region_description"": ""United States"",
+    ""query"": [
+        ""90178387""
+    ],
+    ""ingredients"": [
+        {
+            ""food_id"": 90178387,
+            ""food_name"": ""Chia Seeds"",
+            ""food_type"": ""Generic"",
+            ""brand_name"": """",
+            ""match_accuracy"": 100,
+            ""eaten"": {
+                ""singular_description"": ""tablespoon"",
+                ""plural_description"": ""tablespoons"",
+                ""units"": 1.0,
+                ""metric_description"": ""g"",
+                ""per_unit_metric_amount"": 13.0,
+                ""total_metric_amount"": 13.0,
+                ""imperial_description"": ""oz"",
+                ""per_unit_imperial_amount"": 0.459,
+                ""total_imperial_amount"": 0.459
+            },
+            ""suggested_serving"": {
+                ""serving_id"": ""72405542"",
+                ""serving"": ""1 tbsp (13.000 g)"",
+                ""is_default"": 1,
+                ""serving_description"": ""1 tbsp"",
+                ""number_of_units"": 1.0
+            }
+        }
+    ]
+}
+",,,,,,,,,,,,,,,,
+"- Select generic, 
+- match serving description (ounces match to fl oz)","{ 
+    ""chat_input"": ""8 ounce of stroberry smoothie"", 
+    ""language"": ""en"", 
+    ""region"": ""us"", 
+    ""language_description"": ""english"", 
+    ""region_description"": ""united states""
+  }","{
+""foods"": [""strawberry smoothie""],
+""language"": ""en"",
+""region"": ""us"",
+""language_description"": ""english"",
+""region_description"": ""united states"",
+""input"": ""8 ounce of strawberry smoothie""
+}",,"{
+  ""input"": ""8 ounce of strawberry smoothie"",
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""english"",
+  ""region_description"": ""united states"",
+  ""foods"": [
+    {
+      ""query"": ""strawberry smoothie"",
+      ""results"": [
+        {
+          ""food_id"": ""23052323"",
+          ""food_name"": ""Strawberry Smoothie"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""75512299"",
+          ""food_name"": ""Strawberry Smoothie - Medium"",
+          ""brand_name"": ""Orange Julius"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""80887"",
+          ""food_name"": ""Low Calorie Soulful Strawberry Smoothie (Regular)"",
+          ""brand_name"": ""Freshens"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""105067014"",
+          ""food_name"": ""Strawberry Smoothie (24 oz)"",
+          ""brand_name"": ""Jack in the Box"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""105067750"",
+          ""food_name"": ""Strawberry Smoothie (16 oz)"",
+          ""brand_name"": ""Jack in the Box"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""169848"",
+          ""food_name"": ""Strawberry Smoothie"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""75512316"",
+          ""food_name"": ""Strawberry Smoothie - Small"",
+          ""brand_name"": ""Orange Julius"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""98466790"",
+          ""food_name"": ""Strawberry Smoothie"",
+          ""brand_name"": ""Wawa"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""86296819"",
+          ""food_name"": ""Strawberry Smoothie (Small)"",
+          ""brand_name"": ""Baskin-Robbins"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""2401156"",
+          ""food_name"": ""Strawberry Banana Smoothie"",
+          ""brand_name"": ""Kroger"",
+          ""food_type"": ""Brand""
+        }
+      ]
+    }
+  ]
+}",,"{
+  ""input"": ""8 ounce of strawberry smoothie"",
+  ""food_ids"": [23052323],
+  ""queries"": [""strawberry smoothie""],
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""English"",
+  ""region_description"": ""United States"",
+  ""include_servings"": ""defaultAndGrams""
+}",,"{
+  ""input"": ""8 ounce of strawberry smoothie"",
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""English"",
+  ""region_description"": ""United States"",
+  ""include_servings"": ""defaultAndGrams"",
+  ""foods"": [
+    {
+      ""query"": 23052323,
+      ""results"": [
+        {
+          ""food_id"": ""23052323"",
+          ""food_name"": ""Strawberry Smoothie"",
+          ""food_type"": ""Generic"",
+          ""servings"": {
+            ""serving"": [
+              {
+                ""serving_id"": ""21565901"",
+                ""serving_description"": ""1 cup"",
+                ""is_default"": ""1"",
+                ""serving"": ""1 cup (202.000 g)""
+              },
+              {
+                ""serving_id"": ""21565900"",
+                ""serving_description"": ""1 fl oz"",
+                ""is_default"": ""0"",
+                ""serving"": ""1 fl oz (25.300 g)""
+              },
+              {
+                ""serving_id"": ""21565903"",
+                ""serving_description"": ""100 g"",
+                ""is_default"": ""0"",
+                ""serving"": ""100 g (100.000 g)""
+              },
+              {
+                ""serving_id"": ""21565904"",
+                ""serving_description"": ""100 ml"",
+                ""is_default"": ""0"",
+                ""serving"": ""100 ml (85.550 g)""
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}",,"json
+{
+    ""input"": ""8 ounce of strawberry smoothie"",
+    ""language"": ""en"",
+    ""region"": ""us"",
+    ""language_description"": ""English"",
+    ""region_description"": ""United States"",
+    ""query"": [
+        ""23052323""
+    ],
+    ""ingredients"": [
+        {
+            ""food_id"": 23052323,
+            ""food_name"": ""Strawberry Smoothie"",
+            ""food_type"": ""Generic"",
+            ""brand_name"": """",
+            ""match_accuracy"": 100,
+            ""eaten"": {
+                ""singular_description"": ""ounce"",
+                ""plural_description"": ""ounces"",
+                ""units"": 8.0,
+                ""metric_description"": ""ml"",
+                ""per_unit_metric_amount"": 29.5735,
+                ""total_metric_amount"": 236.588,
+                ""imperial_description"": ""fl oz"",
+                ""per_unit_imperial_amount"": 1.0,
+                ""total_imperial_amount"": 8.0
+            },
+            ""suggested_serving"": {
+                ""serving_id"": ""21565900"",
+                ""serving"": ""1 fl oz (25.300 g)"",
+                ""is_default"": 0,
+                ""serving_description"": ""1 fl oz"",
+                ""number_of_units"": 8.0
+            }
+        }
+    ]
+}
+",,,,,,,,,,,,,,,,
+"- Brand MUST match
+- Food name CAN vary but the core has to match (e.g. Peanut butter OR Creamy peanut butter - acceptable, Peanut butter cereal - not acceptable)
+- No serving description match. Eaten Expected result is priority","{ 
+    ""chat_input"": ""1 teaspoon of Jif peanut butter"", 
+    ""language"": ""en"", 
+    ""region"": ""us"", 
+    ""language_description"": ""english"", 
+    ""region_description"": ""united states""
+  }","{
+""foods"": [""Jif peanut butter""],
+""language"": ""en"",
+""region"": ""us"",
+""language_description"": ""english"",
+""region_description"": ""united states"",
+""input"": ""1 teaspoon of Jif peanut butter""
+}",,"{
+  ""input"": ""1 teaspoon of Jif peanut butter"",
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""english"",
+  ""region_description"": ""united states"",
+  ""foods"": [
+    {
+      ""query"": ""Jif peanut butter"",
+      ""results"": [
+        {
+          ""food_id"": ""4055473"",
+          ""food_name"": ""Creamy Peanut Butter"",
+          ""brand_name"": ""Jif"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""302993"",
+          ""food_name"": ""Natural Creamy Peanut Butter"",
+          ""brand_name"": ""Jif"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""28973"",
+          ""food_name"": ""Extra Crunchy Peanut Butter"",
+          ""brand_name"": ""Jif"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""7356799"",
+          ""food_name"": ""Creamy Peanut Butter"",
+          ""brand_name"": ""Jif"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""51530"",
+          ""food_name"": ""Reduced Fat Creamy Peanut Butter"",
+          ""brand_name"": ""Jif"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""41085911"",
+          ""food_name"": ""No Sugar Added Creamy Peanut Butter"",
+          ""brand_name"": ""Jif"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""1422905"",
+          ""food_name"": ""Extra Crunchy Peanut Butter"",
+          ""brand_name"": ""Jif"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""1971641"",
+          ""food_name"": ""Natural Crunchy Peanut Butter"",
+          ""brand_name"": ""Jif"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""8177388"",
+          ""food_name"": ""Low Sodium Natural Creamy Peanut Butter"",
+          ""brand_name"": ""Jif"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""5881242"",
+          ""food_name"": ""To Go Creamy Peanut Butter"",
+          ""brand_name"": ""Jif"",
+          ""food_type"": ""Brand""
+        }
+      ]
+    }
+  ]
+}",,"{
+  ""input"": ""1 teaspoon of Jif peanut butter"",
+  ""food_ids"": [4055473],
+  ""queries"": [""Jif peanut butter""],
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""English"",
+  ""region_description"": ""United States"",
+  ""include_servings"": ""defaultAndGrams""
+}",,"{
+  ""input"": ""1 teaspoon of Jif peanut butter"",
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""English"",
+  ""region_description"": ""United States"",
+  ""include_servings"": ""defaultAndGrams"",
+  ""foods"": [
+    {
+      ""query"": 302993,
+      ""results"": [
+        {
+          ""food_id"": ""302993"",
+          ""food_name"": ""Natural Creamy Peanut Butter"",
+          ""brand_name"": ""Jif"",
+          ""food_type"": ""Brand"",
+          ""servings"": {
+            ""serving"": {
+              ""serving_id"": ""338024"",
+              ""serving_description"": ""2 tbsp"",
+              ""is_default"": ""1"",
+              ""serving"": ""2 tbsp (33.000 g)""
+            }
+          }
+        }
+      ]
+    }
+  ]
+}",,"{
+    ""input"": ""1 teaspoon of Jif peanut butter"",
+    ""language"": ""en"",
+    ""region"": ""us"",
+    ""language_description"": ""English"",
+    ""region_description"": ""United States"",
+    ""query"": [
+        ""302993""
+    ],
+    ""ingredients"": [
+        {
+            ""food_id"": 302993,
+            ""food_name"": ""Natural Creamy Peanut Butter"",
+            ""food_type"": ""Brand"",
+            ""brand_name"": ""Jif"",
+            ""match_accuracy"": 100,
+            ""eaten"": {
+                ""singular_description"": ""teaspoon"",
+                ""plural_description"": ""teaspoons"",
+                ""units"": 1.0,
+                ""metric_description"": ""g"",
+                ""per_unit_metric_amount"": 5.0,
+                ""total_metric_amount"": 5.0,
+                ""imperial_description"": ""oz"",
+                ""per_unit_imperial_amount"": 0.17637,
+                ""total_imperial_amount"": 0.17637
+            },
+            ""suggested_serving"": {
+                ""serving_id"": ""338024"",
+                ""serving"": ""2 tbsp (33.000 g)"",
+                ""is_default"": 1,
+                ""serving_description"": ""2 tbsp"",
+                ""number_of_units"": 0.5
+            }
+        }
+    ]
+}
+",,,,,,,,,,,,,,,,
+,"{ 
+    ""chat_input"": ""2 cups of Trader Joe's low-fat kefir"", 
+    ""language"": ""en"", 
+    ""region"": ""us"", 
+    ""language_description"": ""english"", 
+    ""region_description"": ""united states""
+  }","{
+""foods"": [""Trader Joe's low-fat kefir""],
+""language"": ""en"",
+""region"": ""us"",
+""language_description"": ""english"",
+""region_description"": ""united states"",
+""input"": ""2 cups of Trader Joe's low-fat kefir""
+}",,"{
+  ""input"": ""2 cups of Trader Joe's low-fat kefir"",
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""english"",
+  ""region_description"": ""united states"",
+  ""foods"": [
+    {
+      ""query"": ""Trader Joe's low-fat kefir"",
+      ""results"": [
+        {
+          ""food_id"": ""14820902"",
+          ""food_name"": ""Low Fat Plain Kefir"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""20350785"",
+          ""food_name"": ""Low Fat Milk"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""22747349"",
+          ""food_name"": ""Greek Low Fat Yogurt"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""84828"",
+          ""food_name"": ""Low Fat French Toast"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""79530"",
+          ""food_name"": ""Low Fat Chocolate Yogurt"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""60368"",
+          ""food_name"": ""Low Fat Cottage Cheese"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""2630767"",
+          ""food_name"": ""Low Fat Chocolate Milk"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""235475"",
+          ""food_name"": ""Low Fat Blueberry Bran Muffins"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""123100"",
+          ""food_name"": ""Low Fat Orange Cranberry Bread"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""101850"",
+          ""food_name"": ""Low Fat Parmesan Ranch Dressing"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand""
+        }
+      ]
+    }
+  ]
+}",,"{
+  ""input"": ""2 cups of Trader Joe's low-fat kefir"",
+  ""food_ids"": [14820902],
+  ""queries"": [""Trader Joe's low-fat kefir""],
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""english"",
+  ""region_description"": ""united states"",
+  ""include_servings"": ""defaultAndGrams""
+}",,"{
+  ""input"": ""2 cups of Trader Joe's low-fat kefir"",
+  ""language"": ""en"",
+  ""region"": ""us"",
+  ""language_description"": ""english"",
+  ""region_description"": ""united states"",
+  ""include_servings"": ""defaultAndGrams"",
+  ""foods"": [
+    {
+      ""query"": 14820902,
+      ""results"": [
+        {
+          ""food_id"": ""14820902"",
+          ""food_name"": ""Low Fat Plain Kefir"",
+          ""brand_name"": ""Trader Joe's"",
+          ""food_type"": ""Brand"",
+          ""servings"": {
+            ""serving"": {
+              ""serving_id"": ""14019631"",
+              ""serving_description"": ""1 cup"",
+              ""is_default"": ""1"",
+              ""serving"": ""1 cup (240.000 ml)""
+            }
+          }
+        }
+      ]
+    }
+  ]
+}",,"{
+    ""input"": ""2 cups of Trader Joe's low-fat kefir"",
+    ""language"": ""en"",
+    ""region"": ""us"",
+    ""language_description"": ""english"",
+    ""region_description"": ""united states"",
+    ""query"": [
+        ""14820902""
+    ],
+    ""ingredients"": [
+        {
+            ""food_id"": 14820902,
+            ""food_name"": ""Low Fat Plain Kefir"",
+            ""food_type"": ""Brand"",
+            ""brand_name"": ""Trader Joe's"",
+            ""match_accuracy"": 100,
+            ""eaten"": {
+                ""singular_description"": ""cup"",
+                ""plural_description"": ""cups"",
+                ""units"": 2.0,
+                ""metric_description"": ""ml"",
+                ""per_unit_metric_amount"": 240.0,
+                ""total_metric_amount"": 480.0,
+                ""imperial_description"": ""fl oz"",
+                ""per_unit_imperial_amount"": 8.0,
+                ""total_imperial_amount"": 16.0
+            },
+            ""suggested_serving"": {
+                ""serving_id"": ""14019631"",
+                ""serving"": ""1 cup (240.000 ml)"",
+                ""is_default"": 1,
+                ""serving_description"": ""1 cup"",
+                ""number_of_units"": 2.0
+            }
+        }
+    ]
+}
+",,,,,,,,,,,,,,,,
+,"{ 
+""chat_input"": ""Творог обезжиренный 140 г"", 
+""language"": ""ru"", 
+""region"": ""ru"", 
+""language_description"": ""russian"", 
+""region_description"": ""russia""
+}","{
+""foods"": [""творог обезжиренный""],
+""language"": ""ru"",
+""region"": ""ru"",
+""language_description"": ""russian"",
+""region_description"": ""russia"",
+""input"": ""Творог обезжиренный 140 г""
+}",,"{
+  ""input"": ""Творог обезжиренный 140 г"",
+  ""language"": ""ru"",
+  ""region"": ""ru"",
+  ""language_description"": ""russian"",
+  ""region_description"": ""russia"",
+  ""foods"": [
+    {
+      ""query"": ""творог обезжиренный"",
+      ""results"": [
+        {
+          ""food_id"": ""5931804"",
+          ""food_name"": ""Творог (Обезжиренный)"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""33298009"",
+          ""food_name"": ""Творог Обезжиренный"",
+          ""brand_name"": ""Станция Молочная"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""5430166"",
+          ""food_name"": ""Творог Ирбитский Обезжиренный"",
+          ""brand_name"": ""Ирбитский Молочный Завод"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""29148785"",
+          ""food_name"": ""Творог Обезжиренный 0,5%"",
+          ""brand_name"": ""Село Зелёное"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""3489687"",
+          ""food_name"": ""Творог Обезжиренный"",
+          ""brand_name"": ""Кубанский Молочник"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""5058638"",
+          ""food_name"": ""Творог Обезжиренный 0,5%"",
+          ""brand_name"": ""Вкуснотеево"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""5003838"",
+          ""food_name"": ""Творог Обезжиренный 0%"",
+          ""brand_name"": ""Савушкин Продукт"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""33694"",
+          ""food_name"": ""Творог (Полностью Обезжиренный)"",
+          ""food_type"": ""Generic""
+        },
+        {
+          ""food_id"": ""3485676"",
+          ""food_name"": ""Творог Обезжиренный"",
+          ""brand_name"": ""Коровка из Кореновки"",
+          ""food_type"": ""Brand""
+        },
+        {
+          ""food_id"": ""25512935"",
+          ""food_name"": ""Творог Обезжиренный 1%"",
+          ""brand_name"": ""Красная Цена"",
+          ""food_type"": ""Brand""
+        }
+      ]
+    }
+  ]
+}",,"{
+  ""input"": ""Творог обезжиренный 140 г"",
+  ""food_ids"": [5931804],
+  ""queries"": [""творог обезжиренный""],
+  ""language"": ""ru"",
+  ""region"": ""ru"",
+  ""language_description"": ""russian"",
+  ""region_description"": ""russia"",
+  ""include_servings"": ""defaultAndGrams""
+}",,"{
+  ""input"": ""Творог обезжиренный 140 г"",
+  ""language"": ""ru"",
+  ""region"": ""ru"",
+  ""language_description"": ""russian"",
+  ""region_description"": ""russia"",
+  ""include_servings"": ""defaultAndGrams"",
+  ""foods"": [
+    {
+      ""query"": 5931804,
+      ""results"": [
+        {
+          ""food_id"": ""5931804"",
+          ""food_name"": ""Творог (Обезжиренный)"",
+          ""food_type"": ""Generic"",
+          ""servings"": {
+            ""serving"": {
+              ""serving_id"": ""5755616"",
+              ""serving_description"": ""100 г"",
+              ""is_default"": ""1"",
+              ""serving"": ""100 г (100.000 г)""
+            }
+          }
+        }
+      ]
+    }
+  ]
+}",,"{
+""input"": ""Творог обезжиренный 140 г"", 
+""language"": ""ru"", 
+""region"": ""ru"", 
+""language_description"": ""russian"", 
+""region_description"": ""russia"",
+    ""query"": [
+        ""5931804""
+    ],
+    ""ingredients"": [
+        {
+            ""food_id"": 5931804,
+            ""food_name"": ""Творог (Обезжиренный)"",
+            ""food_type"": ""Generic"",
+            ""brand_name"": """",
+            ""match_accuracy"": 100,
+            ""eaten"": {
+                ""singular_description"": ""г"",
+                ""plural_description"": ""г"",
+                ""units"": 140,
+                ""metric_description"": ""g"",
+                ""per_unit_metric_amount"": 1,
+                ""total_metric_amount"": 140,
+                ""imperial_description"": ""oz"",
+                ""per_unit_imperial_amount"": 0.035274,
+                ""total_imperial_amount"": 4.93836
+            },
+            ""suggested_serving"": {
+                ""serving_id"": ""5755616"",
+                ""serving"": ""100 г (100.000 г)"",
+                ""is_default"": 1,
+                ""serving_description"": ""100 г"",
+                ""number_of_units"": 1.4
+            }
+        }
+    ]
+}",,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,

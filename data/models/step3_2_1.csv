@@ -1,0 +1,2 @@
+model,region,input price,output price
+openai.gpt-oss-20b-1:0,us-west-2,$0.00,$0.00

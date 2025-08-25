@@ -1,0 +1,6 @@
+﻿model,region,input price,output price
+us.meta.llama4-maverick-17b-instruct-v1:0,us-west-2,$0.00024 ,$0.00097 
+us.meta.llama3-1-70b-instruct-v1:0,us-west-2,$0.00072 ,$0.00072 
+us.meta.llama3-1-405b-instruct-v1:0,us-east-2,$0.00240 ,$0.00240 
+us.meta.llama3-1-70b-instruct-v1:0 (latency_optimized),us-west-2,$0.00090 ,$0.00090 
+us.meta.llama3-1-405b-instruct-v1:0 (latency_optimized),us-east-2,$0.00300 ,$0.00300 
