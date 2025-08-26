@@ -1,0 +1,1402 @@
+[
+  {
+    "row_index": 0,
+    "input_data": {
+      "input": "I small avocado, 1 keto bread with sugar free strawberries jam. 1/2 cup hot water with 1/4 lemon juice and 1 tbsp chia seeds",
+      "language": "en",
+      "region": "us",
+      "language_description": "english",
+      "region_description": "united states",
+      "foods": [
+        {
+          "query": "keto bread",
+          "results": [
+            {
+              "food_id": "33398452",
+              "food_name": "Keto White Bread",
+              "brand_name": "Franz",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "70016958",
+              "food_name": "Keto Soft White Bread",
+              "brand_name": "Nature's Own",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "37342659",
+              "food_name": "Keto Friendly Bread",
+              "brand_name": "Natural Ovens Bakery",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "43913399",
+              "food_name": "Keto Friendly Wheat Bread",
+              "brand_name": "L'oven Fresh",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "43961835",
+              "food_name": "Keto Bread",
+              "brand_name": "Lewis Bake Shop",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "53189047",
+              "food_name": "Superior Keto Seeded Bread",
+              "brand_name": "Arnold",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "66509477",
+              "food_name": "Timber Wolf Keto Seeds Bread",
+              "brand_name": "Inked Bread",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "47121310",
+              "food_name": "Keto Bread",
+              "brand_name": "Oroweat",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "44856403",
+              "food_name": "Keto Bread",
+              "brand_name": "Healthy Life",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "59464216",
+              "food_name": "Keto Bread",
+              "brand_name": "Signature Select",
+              "food_type": "Brand"
+            }
+          ]
+        },
+        {
+          "query": "avocado",
+          "results": [
+            {
+              "food_id": "66325",
+              "food_name": "Avocado",
+              "brand_name": "Calavo",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "35752",
+              "food_name": "Avocados",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "12010907",
+              "food_name": "Avocado",
+              "brand_name": "Del Monte",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "30152986",
+              "food_name": "Avocado",
+              "brand_name": "Avocados From Mexico",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "5387",
+              "food_name": "Avocado",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "270988",
+              "food_name": "Hass Avocado",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "16929465",
+              "food_name": "Teeny Tiny Avocado",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "997863",
+              "food_name": "Avocado",
+              "brand_name": "Mission",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "49208295",
+              "food_name": "Avocado Chunks",
+              "brand_name": "365",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "570638",
+              "food_name": "Avocado Halves",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            }
+          ]
+        },
+        {
+          "query": "chia seeds",
+          "results": [
+            {
+              "food_id": "1328288",
+              "food_name": "Chia Seeds",
+              "brand_name": "Spectrum",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "15244941",
+              "food_name": "Chia Seeds",
+              "brand_name": "Simply Nature",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "90178387",
+              "food_name": "Chia Seeds",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "40902661",
+              "food_name": "Chia Seeds",
+              "brand_name": "Organic Great Value",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "104998318",
+              "food_name": "Chia Seeds",
+              "brand_name": "Tropical Smoothie Cafe",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "4198628",
+              "food_name": "Chia Seeds",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "1577014",
+              "food_name": "Organic Chia Seed",
+              "brand_name": "Nutiva",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "18215139",
+              "food_name": "Organic Whole Chia Seeds",
+              "brand_name": "Bob's Red Mill",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "20322003",
+              "food_name": "Chia Seeds",
+              "brand_name": "Goya",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "6725091",
+              "food_name": "Organic Chia Seeds",
+              "brand_name": "Nature's Intent",
+              "food_type": "Brand"
+            }
+          ]
+        },
+        {
+          "query": "lemon juice",
+          "results": [
+            {
+              "food_id": "35849",
+              "food_name": "Lemon Juice",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "35850",
+              "food_name": "Lemon Juice (Canned or Bottled)",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "5286",
+              "food_name": "Fresh Lemon Juice",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "5285",
+              "food_name": "Lemon Juice",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "5977320",
+              "food_name": "100% Lemon Juice",
+              "brand_name": "Great Value",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "231092",
+              "food_name": "100% Natural Strength Lemon Juice from Concentrate",
+              "brand_name": "Realemon",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "13173715",
+              "food_name": "Lemon Juice",
+              "brand_name": "Sicilia",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "38898",
+              "food_name": "Ladyfingers Cookies (with Lemon Juice and Rind)",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "304007",
+              "food_name": "100% Lemon Juice",
+              "brand_name": "Nature's Nectar",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "8154443",
+              "food_name": "Lemon Juice",
+              "brand_name": "Italia Garden",
+              "food_type": "Brand"
+            }
+          ]
+        },
+        {
+          "query": "strawberries jam",
+          "results": [
+            {
+              "food_id": "7200",
+              "food_name": "Jam Preserves",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "5526",
+              "food_name": "Strawberries with Sugar",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "5525",
+              "food_name": "Strawberries",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "5527",
+              "food_name": "Strawberries (Cooked or Canned)",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "5530",
+              "food_name": "Frozen Strawberries",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "5532",
+              "food_name": "Frozen Strawberries with Sugar",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "5531",
+              "food_name": "Unsweetened Frozen Strawberries",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "35976",
+              "food_name": "Strawberries",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "5529",
+              "food_name": "Strawberries in Syrup (Cooked or Canned)",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "5528",
+              "food_name": "Strawberries Unsweetened in Water Pack (Cooked or Canned)",
+              "food_type": "Generic"
+            }
+          ]
+        },
+        {
+          "query": "hot water",
+          "results": [
+            {
+              "food_id": "10811554",
+              "food_name": "Hot Water",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "37922",
+              "food_name": "Water",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "6711",
+              "food_name": "Oriental Style Vegetable Combinations (Broccoli, Green Pepper,  Water Chestnuts, Fat Not Added in Cooking)",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "249979",
+              "food_name": "Skwinkles Watermelon Flavor Hot Candy Strips and Tamarind Flavor Sauce (Salsaghetti)",
+              "brand_name": "Lucas",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "35472",
+              "food_name": "Whole Wheat Hot Natural Cereal (with Salt, Cooked with Water)",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "7452978",
+              "food_name": "Tater Tot Casserole",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "6811",
+              "food_name": "Pickled Hot Pepper",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "36479",
+              "food_name": "Green Hot Chili Peppers (Excluding Seeds, Solids and Liquids, Canned)",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "35442",
+              "food_name": "Whole Wheat Hot Natural Cereal (Without Salt, Cooked with Water)",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "7690",
+              "food_name": "Hot Buttered Rum",
+              "food_type": "Generic"
+            }
+          ]
+        }
+      ]
+    },
+    "invocation_time": 1.5042192935943604,
+    "extracted_foods": {
+      "input": "I small avocado, 1 keto bread with sugar free strawberries jam. 1/2 cup hot water with 1/4 lemon juice and 1 tbsp chia seeds",
+      "food_ids": [
+        35849,
+        33398452,
+        1328288,
+        5285,
+        90178387
+      ],
+      "queries": [
+        "lemon juice",
+        "keto bread",
+        "chia seeds",
+        "strawberries jam",
+        "hot water"
+      ],
+      "language": "en",
+      "region": "us",
+      "language_description": "english",
+      "region_description": "united states",
+      "include_servings": "defaultAndGrams"
+    },
+    "cost": 0.00016408,
+    "input_tokens": 4012,
+    "output_tokens": 169
+  },
+  {
+    "row_index": 1,
+    "input_data": {
+      "input": "\u042f \u0435\u043b\u0430 \u044f\u0438\u0447\u043d\u0438\u0446\u0443 \u0438\u0437 \u0434\u0432\u0443\u0445 \u044f\u0438\u0446 \u043f\u043e\u0441\u044b\u043f\u0430\u043d\u043d\u0443\u044e \u0441\u043e\u043b\u044c\u044e \u0441 \u0442\u0440\u0430\u0432\u0430\u043c\u0438 \u043e\u0434\u0438\u043d \u043b\u043e\u043c\u0442\u0438\u043a \u0440\u0438\u0441\u043e\u0432\u044b\u0439 \u0445\u043b\u0435\u0431 \u0441 \u0442\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u043c \u0441\u044b\u0440\u043e\u043c \u0438 \u043a\u043e\u0444\u0435 \u0441 \u0441\u0430\u0445\u0430\u0440\u043e\u043c \u0438 \u0441\u043b\u0438\u0432\u043a\u0430\u043c\u0438",
+      "language": "ru",
+      "region": "ru",
+      "language_description": "russian",
+      "region_description": "russia",
+      "foods": [
+        {
+          "query": "\u0440\u0438\u0441\u043e\u0432\u044b\u0439 \u0445\u043b\u0435\u0431",
+          "results": [
+            {
+              "food_id": "51532392",
+              "food_name": "\u0420\u0438\u0441\u043e\u0432\u044b\u0439 \u0425\u043b\u0435\u0431",
+              "brand_name": "\u0424\u043e\u0440\u043c\u0443\u043b\u0430 \u0425\u043b\u0435\u0431\u0430",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "17202166",
+              "food_name": "\u0420\u0438\u0441\u043e\u0432\u044b\u0439 \u0425\u043b\u0435\u0431",
+              "brand_name": "\u0425\u043c\u0435\u043b\u044c\u043d\u0438\u0446\u043a\u0438\u0439",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "29131440",
+              "food_name": "\u0425\u043b\u0435\u0431 \u0420\u0438\u0441\u043e\u0432\u044b\u0439",
+              "brand_name": "SPAR",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "38793",
+              "food_name": "\u0418\u0442\u0430\u043b\u044c\u044f\u043d\u0441\u043a\u0438\u0439 \u0425\u043b\u0435\u0431",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "10877311",
+              "food_name": "\u0425\u043b\u0435\u0431\u0435\u0446 \u0420\u0438\u0441\u043e\u0432\u044b\u0439",
+              "brand_name": "Dr. Korner",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "40779",
+              "food_name": "\u0421\u0430\u043a\u0435",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "38794",
+              "food_name": "\u041c\u0443\u043b\u044c\u0442\u0438\u0437\u0435\u0440\u043d\u043e\u0432\u043e\u0439 \u0425\u043b\u0435\u0431",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "57167692",
+              "food_name": "\u0425\u043b\u0435\u0431 \u0420\u0438\u0441\u043e\u0432\u044b\u0439",
+              "brand_name": "\u041d\u0430 \u0437\u0434\u043e\u0440\u043e\u0432\u044c\u0435",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "39098",
+              "food_name": "\u041a\u0443\u043a\u0443\u0440\u0443\u0437\u043d\u044b\u0439 \u0425\u043b\u0435\u0431 (\u041a\u0443\u043a\u0443\u0440\u0443\u0437\u043d\u044b\u0435 \u0411\u0443\u043b\u043e\u0447\u043a\u0438) (\u0438\u0437 \u0421\u0443\u0445\u043e\u0439 \u0421\u043c\u0435\u0441\u0438)",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "38798",
+              "food_name": "\u0425\u043b\u0435\u0431 \u041e\u0432\u0441\u044f\u043d\u043e\u0439",
+              "food_type": "Generic"
+            }
+          ]
+        },
+        {
+          "query": "\u0442\u0440\u0430\u0432\u044b",
+          "results": [
+            {
+              "food_id": "7397074",
+              "food_name": "\u041f\u0440\u043e\u0432\u0430\u043d\u0441\u043a\u0438\u0435 \u0422\u0440\u0430\u0432\u044b",
+              "brand_name": "Kamis",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "33906",
+              "food_name": "\u0423\u043a\u0440\u043e\u043f",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "15550993",
+              "food_name": "\u0422\u0440\u0430\u0432\u044b \u0434\u043b\u044f \u0421\u0430\u043b\u0430\u0442\u043e\u0432",
+              "brand_name": "Kotanyi",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "5829584",
+              "food_name": "\u0422\u0440\u0430\u0432\u044b \u0418\u0442\u0430\u043b\u044c\u044f\u043d\u0441\u043a\u043e\u0439 \u041a\u0443\u0445\u043d\u0438",
+              "brand_name": "Kamis",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "33876",
+              "food_name": "\u0422\u043c\u0438\u043d",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "33915",
+              "food_name": "\u041a\u0430\u043f\u0435\u0440\u0441\u044b",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "33918",
+              "food_name": "\u041c\u044f\u0442\u0430",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "34369390",
+              "food_name": "\u0422\u0440\u0430\u0432\u044b \u0413\u0440\u0435\u0446\u0438\u0438",
+              "brand_name": "Kamis",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "33904",
+              "food_name": "\u041a\u0443\u0440\u043a\u0443\u043c\u0430 \u0434\u043b\u0438\u043d\u043d\u0430\u044f",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "33907",
+              "food_name": "\u0416\u0435\u043b\u0442\u0430\u044f \u0413\u043e\u0440\u0447\u0438\u0446\u0430",
+              "food_type": "Generic"
+            }
+          ]
+        },
+        {
+          "query": "\u044f\u0438\u0447\u043d\u0438\u0446\u0430",
+          "results": [
+            {
+              "food_id": "3096",
+              "food_name": "\u0416\u0430\u0440\u0435\u043d\u043e\u0435 \u042f\u0439\u0446\u043e",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "39866",
+              "food_name": "\u042f\u0438\u0447\u043d\u0438\u0446\u0430",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "26315615",
+              "food_name": "\u042f\u0438\u0447\u043d\u0438\u0446\u0430 \u0438\u0437 \u0414\u0432\u0443\u0445 \u042f\u0438\u0446",
+              "brand_name": "\u0414\u0435\u043b\u043e \u0412\u043a\u0443\u0441\u0430",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "3114",
+              "food_name": "\u041e\u043c\u043b\u0435\u0442 \u0438\u043b\u0438 \u042f\u0438\u0447\u043d\u0438\u0446\u0430",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "3097",
+              "food_name": "\u0416\u0430\u0440\u0435\u043d\u043e\u0435 \u042f\u0439\u0446\u043e \u0431\u0435\u0437 \u0416\u0438\u0440\u0430",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "13134071",
+              "food_name": "\u042f\u0438\u0447\u043d\u0438\u0446\u0430 \u0441 \u041f\u043e\u043c\u0438\u0434\u043e\u0440\u0430\u043c\u0438",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "3130",
+              "food_name": "\u041e\u043c\u043b\u0435\u0442 \u0438\u043b\u0438 \u042f\u0438\u0447\u043d\u0438\u0446\u0430 \u0441 \u041a\u043e\u043b\u0431\u0430\u0441\u043e\u0439",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "57590300",
+              "food_name": "\u042f\u0438\u0447\u043d\u0438\u0446\u0430",
+              "brand_name": "\u041c\u0430\u0433\u043d\u043e\u043b\u0438\u044f",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "33801",
+              "food_name": "\u042f\u0438\u0447\u043d\u0438\u0446\u0430 (\u0441 \u0426\u0435\u043b\u044b\u043c \u042f\u0439\u0446\u043e\u043c)",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "3119",
+              "food_name": "\u041e\u043c\u043b\u0435\u0442 \u0438\u043b\u0438 \u042f\u0438\u0447\u043d\u0438\u0446\u0430 \u0441 \u0412\u0435\u0442\u0447\u0438\u043d\u043e\u0439 \u0438\u043b\u0438 \u0411\u0435\u043a\u043e\u043d\u043e\u043c",
+              "food_type": "Generic"
+            }
+          ]
+        },
+        {
+          "query": "\u0441\u043e\u043b\u044c",
+          "results": [
+            {
+              "food_id": "33908",
+              "food_name": "\u0421\u043e\u043b\u044c",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "58235809",
+              "food_name": "\u0421\u043e\u043b\u044c \u0410\u0434\u044b\u0433\u0435\u0439\u0441\u043a\u0430\u044f",
+              "brand_name": "\u041c\u0430\u0433\u043d\u0438\u0442",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "298864",
+              "food_name": "\u041c\u043e\u0440\u0441\u043a\u0430\u044f \u0421\u043e\u043b\u044c",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "36875739",
+              "food_name": "\u0421\u043e\u043b\u044c \u0420\u043e\u0437\u043e\u0432\u0430\u044f \u0413\u0438\u043c\u0430\u043b\u0430\u0439\u0441\u043a\u0430\u044f",
+              "brand_name": "\u0412\u043e\u043b\u0448\u0435\u0431\u043d\u043e\u0435 \u0414\u0435\u0440\u0435\u0432\u043e",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "48379538",
+              "food_name": "\u0421\u043e\u043b\u044c \u041f\u0438\u0449\u0435\u0432\u0430\u044f \u0441 \u041f\u043e\u043d\u0438\u0436\u0435\u043d\u043d\u044b\u043c \u0421\u043e\u0434\u0435\u0440\u0436\u0430\u043d\u0438\u0435\u043c \u041d\u0430\u0442\u0440\u0438\u044f",
+              "brand_name": "\u0412\u0430\u043b\u0435\u0442\u0435\u043a",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "15323940",
+              "food_name": "\u0427\u0435\u0441\u043d\u043e\u043a-\u0422\u0440\u0430\u0432\u044b-\u0421\u043e\u043b\u044c",
+              "brand_name": "Kotanyi",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "27476419",
+              "food_name": "\u0413\u0438\u043c\u0430\u043b\u0430\u0439\u0441\u043a\u0430\u044f \u0421\u043e\u043b\u044c \u0441 \u041f\u0440\u043e\u0432\u0430\u043d\u0441\u043a\u0438\u043c\u0438 \u0422\u0440\u0430\u0432\u0430\u043c\u0438",
+              "brand_name": "Kotanyi",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "84009293",
+              "food_name": "\u0421\u043e\u043b\u044c \u0412\u043a\u0443\u0441\u043d\u0430\u044f",
+              "brand_name": "\u0420\u0435\u0441\u0442\u043e\u0440\u0438\u044f \u0428\u0435\u0444",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "57924525",
+              "food_name": "\u041c\u043e\u0440\u0441\u043a\u0430\u044f \u0421\u043e\u043b\u044c \u0441 \u0427\u0435\u0441\u043d\u043e\u043a\u043e\u043c \u0438 \u0422\u0440\u0430\u0432\u0430\u043c\u0438",
+              "brand_name": "Kamis",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "20940112",
+              "food_name": "Pink Salt Himalayan",
+              "brand_name": "Setra",
+              "food_type": "Brand"
+            }
+          ]
+        },
+        {
+          "query": "\u043a\u043e\u0444\u0435",
+          "results": [
+            {
+              "food_id": "7331",
+              "food_name": "\u041a\u043e\u0444\u0435",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "2479602",
+              "food_name": "\u041a\u043e\u0444\u0435 \u0441 \u041c\u043e\u043b\u043e\u043a\u043e\u043c",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "37818",
+              "food_name": "\u041a\u043e\u0444\u0435 (\u0438\u0437 \u041c\u043e\u043b\u043e\u0442\u044b\u0445 \u0417\u0435\u0440\u0435\u043d)",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "7346",
+              "food_name": "\u041a\u043e\u0444\u0435 \u0441 \u0421\u0430\u0445\u0430\u0440\u043e\u043c",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "2479604",
+              "food_name": "\u041a\u043e\u0444\u0435 \u0441 \u041c\u043e\u043b\u043e\u043a\u043e\u043c \u0438 \u0421\u0430\u0445\u0430\u0440\u043e\u043c",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "37821",
+              "food_name": "\u041a\u043e\u0444\u0435 (\u0420\u0430\u0441\u0442\u0432\u043e\u0440\u0438\u043c\u044b\u0439)",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "7338239",
+              "food_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u043e",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "7350",
+              "food_name": "\u041a\u0430\u043f\u0443\u0447\u0438\u043d\u043e",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "7554",
+              "food_name": "\u041a\u043e\u0444\u0435 \u042d\u0441\u043f\u0440\u0435\u0441\u0441\u043e",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "5284208",
+              "food_name": "\u041a\u043e\u0444\u0435 3 \u0432 1 \u041a\u043b\u0430\u0441\u0441\u0438\u043a",
+              "brand_name": "Nescafe",
+              "food_type": "Brand"
+            }
+          ]
+        },
+        {
+          "query": "\u0442\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0439 \u0441\u044b\u0440",
+          "results": [
+            {
+              "food_id": "2811717",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0439 \u0421\u044b\u0440",
+              "brand_name": "\u0425\u043e\u0445\u043b\u0430\u043d\u0434",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "22405330",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0439 \u0421\u044b\u0440",
+              "brand_name": "\u0425\u043e\u0445\u043b\u0430\u043d\u0434",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "24580358",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0439 \u0421\u044b\u0440 \u0421\u043b\u0438\u0432\u043e\u0447\u043d\u044b\u0439",
+              "brand_name": "Almette",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "50995447",
+              "food_name": "\u0421\u044b\u0440 \u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0439 \u041b\u0451\u0433\u043a\u0438\u0439",
+              "brand_name": "Sveza",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "2136938",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0439 \u0421\u044b\u0440 \u0441 \u0417\u0435\u043b\u0435\u043d\u044c\u044e",
+              "brand_name": "\u0425\u043e\u0445\u043b\u0430\u043d\u0434",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "56544484",
+              "food_name": "\u0412\u043e\u0437\u0434\u0443\u0448\u043d\u044b\u0439 \u0421\u044b\u0440 \u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0439",
+              "brand_name": "Sveza",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "33039739",
+              "food_name": "\u0421\u044b\u0440 \u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0439",
+              "brand_name": "\u042d\u043a\u043e\u043c\u0438\u043b\u043a",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "35279820",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0439 \u0421\u044b\u0440",
+              "brand_name": "Violife",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "7446165",
+              "food_name": "\u0421\u044b\u0440 \u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0439",
+              "brand_name": "\u041f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "7207349",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0439 \u0421\u044b\u0440 \u0421\u043b\u0438\u0432\u043e\u0447\u043d\u044b\u0439",
+              "brand_name": "\u0410\u043b\u044c\u043c\u0435\u0442\u0442\u0435",
+              "food_type": "Brand"
+            }
+          ]
+        },
+        {
+          "query": "\u0441\u0430\u0445\u0430\u0440",
+          "results": [
+            {
+              "food_id": "7175",
+              "food_name": "\u0421\u0430\u0445\u0430\u0440",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "23567048",
+              "food_name": "\u0421\u0430\u0445\u0430\u0440",
+              "brand_name": "\u041f\u044f\u0442\u0435\u0440\u043e\u0447\u043a\u0430",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "39559",
+              "food_name": "\u0421\u0430\u0445\u0430\u0440\u043d\u044b\u0439 \u041f\u0435\u0441\u043e\u043a",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "7144407",
+              "food_name": "\u0420\u0430\u0444\u0438\u043d\u0430\u0434",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "9534377",
+              "food_name": "\u0421\u0430\u0445\u0430\u0440",
+              "brand_name": "\u041c\u0430\u043a\u0434\u043e\u043d\u0430\u043b\u0434\u0441",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "24893461",
+              "food_name": "\u0421\u0430\u0445\u0430\u0440 \u0411\u0435\u043b\u044b\u0439",
+              "brand_name": "365 \u0414\u043d\u0435\u0439",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "18219414",
+              "food_name": "\u0421\u0430\u0445\u0430\u0440\u043d\u044b\u0439 \u041f\u0435\u0441\u043e\u043a",
+              "brand_name": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439 \u0421\u0430\u0445\u0430\u0440",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "7105",
+              "food_name": "\u0411\u0435\u043b\u044b\u0439 \u0421\u0430\u0445\u0430\u0440 (\u0413\u0440\u0430\u043d\u0443\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0438\u043b\u0438 \u041a\u0443\u0441\u043a\u043e\u0432\u043e\u0439)",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "39558",
+              "food_name": "\u041a\u043e\u0440\u0438\u0447\u043d\u0435\u0432\u044b\u0439 \u0421\u0430\u0445\u0430\u0440",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "14252720",
+              "food_name": "\u0421\u0430\u0445\u0430\u0440 \u0411\u0435\u043b\u044b\u0439 \u041a\u0440\u0438\u0441\u0442\u0430\u043b\u043b\u0438\u0447\u0435\u0441\u043a\u0438\u0439",
+              "brand_name": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439 \u0421\u0430\u0445\u0430\u0440",
+              "food_type": "Brand"
+            }
+          ]
+        },
+        {
+          "query": "\u0441\u043b\u0438\u0432\u043a\u0438",
+          "results": [
+            {
+              "food_id": "3447997",
+              "food_name": "\u0421\u043b\u0438\u0432\u043a\u0438 10%",
+              "brand_name": "\u041f\u0440\u043e\u0441\u0442\u043e\u043a\u0432\u0430\u0448\u0438\u043d\u043e",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "5675746",
+              "food_name": "\u0421\u043b\u0438\u0432\u043a\u0438 \u041f\u043e\u0440\u0446\u0438\u043e\u043d\u043d\u044b\u0435",
+              "brand_name": "Campina",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "2952330",
+              "food_name": "\u0421\u043b\u0438\u0432\u043a\u0438 20%",
+              "brand_name": "\u041f\u0440\u043e\u0441\u0442\u043e\u043a\u0432\u0430\u0448\u0438\u043d\u043e",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "5392240",
+              "food_name": "\u0421\u043b\u0438\u0432\u043a\u0438 33%",
+              "brand_name": "\u0411\u0435\u043b\u044b\u0439 \u0413\u043e\u0440\u043e\u0434",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "6629568",
+              "food_name": "\u0421\u043b\u0438\u0432\u043a\u0438 10%",
+              "brand_name": "\u0414\u043e\u043c\u0438\u043a \u0432 \u0434\u0435\u0440\u0435\u0432\u043d\u0435",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "4942580",
+              "food_name": "\u0421\u043b\u0438\u0432\u043a\u0438 20%",
+              "brand_name": "\u0414\u043e\u043c\u0438\u043a \u0432 \u0434\u0435\u0440\u0435\u0432\u043d\u0435",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "8792715",
+              "food_name": "\u0421\u043b\u0438\u0432\u043a\u0438 33%",
+              "brand_name": "\u041f\u0435\u0442\u043c\u043e\u043b",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "1080",
+              "food_name": "\u0416\u0438\u0440\u043d\u044b\u0435 \u0421\u043b\u0438\u0432\u043a\u0438",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "8618398",
+              "food_name": "\u0421\u043b\u0438\u0432\u043a\u0438 10%",
+              "brand_name": "\u0421\u0435\u043b\u043e \u0417\u0435\u043b\u0451\u043d\u043e\u0435",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "5780675",
+              "food_name": "\u0421\u043b\u0438\u0432\u043a\u0438 10%",
+              "brand_name": "\u0410\u0432\u0438\u0434\u0430",
+              "food_type": "Brand"
+            }
+          ]
+        }
+      ]
+    },
+    "invocation_time": 7.036534309387207,
+    "extracted_foods": {
+      "input": "\u042f \u0435\u043b\u0430 \u044f\u0438\u0447\u043d\u0438\u0446\u0443 \u0438\u0437 \u0434\u0432\u0443\u0445 \u044f\u0438\u0446 \u043f\u043e\u0441\u044b\u043f\u0430\u043d\u043d\u0443\u0441\u0443 \u0441\u043e\u043b\u044c\u044e \u0441 \u0442\u0432\u0430\u0440\u043e\u0436\u043d\u044b\u043c \u0441\u0438\u0440\u043e\u043c \u0438 \u043a\u043e\u0444\u0435 \u0441 \u0438\u0441\u0430\u043a\u0430\u0440\u043e\u043c \u0438 \u0441\u043b\u0438\u0432\u043a\u0430\u043c\u0438",
+      "food_ids": [
+        "38793",
+        "33906",
+        "3096",
+        "33908",
+        "7331",
+        "2811717",
+        "7175",
+        "3447997"
+      ],
+      "queries": [
+        "\u0440\u0438\u0441\u043e\u0432\u044b\u0439 \u0445\u043b\u0435\u0431",
+        "\u0442\u0440\u0430\u0432\u044b",
+        "\u044f\u0438\u0447\u043d\u0438\u0446\u0430",
+        "\u0421\u043e\u043b\u044c",
+        "\u043a\u043e\u0444\u0435",
+        "\u0442\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u043c \u0441\u044b\u0440",
+        "\u0441\u0430\u0445\u0430\u0440",
+        "\u0421\u043b\u0438\u0432\u043a\u0438"
+      ],
+      "language": "ru",
+      "region": "ru",
+      "language_description": "russian",
+      "region_description": "russia",
+      "include_servings": "defaultAndGrams"
+    },
+    "cost": 0.0005967149999999999,
+    "input_tokens": 13449,
+    "output_tokens": 900
+  },
+  {
+    "row_index": 2,
+    "input_data": {
+      "input": "I had a tablespoon of chia seeds",
+      "language": "en",
+      "region": "us",
+      "language_description": "english",
+      "region_description": "united states",
+      "foods": [
+        {
+          "query": "chia seeds",
+          "results": [
+            {
+              "food_id": "1328288",
+              "food_name": "Chia Seeds",
+              "brand_name": "Spectrum",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "15244941",
+              "food_name": "Chia Seeds",
+              "brand_name": "Simply Nature",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "90178387",
+              "food_name": "Chia Seeds",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "40902661",
+              "food_name": "Chia Seeds",
+              "brand_name": "Organic Great Value",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "104998318",
+              "food_name": "Chia Seeds",
+              "brand_name": "Tropical Smoothie Cafe",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "4198628",
+              "food_name": "Chia Seeds",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "1577014",
+              "food_name": "Organic Chia Seed",
+              "brand_name": "Nutiva",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "18215139",
+              "food_name": "Organic Whole Chia Seeds",
+              "brand_name": "Bob's Red Mill",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "20322003",
+              "food_name": "Chia Seeds",
+              "brand_name": "Goya",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "6725091",
+              "food_name": "Organic Chia Seeds",
+              "brand_name": "Nature's Intent",
+              "food_type": "Brand"
+            }
+          ]
+        }
+      ]
+    },
+    "invocation_time": 0.8527302742004395,
+    "extracted_foods": {
+      "input": "I had a tablespoon of chia seeds",
+      "food_ids": [
+        90178387
+      ],
+      "queries": [
+        "chia seeds"
+      ],
+      "language": "en",
+      "region": "us",
+      "language_description": "english",
+      "region_description": "united states",
+      "include_servings": "defaultAndGrams"
+    },
+    "cost": 6.828499999999999e-05,
+    "input_tokens": 1595,
+    "output_tokens": 89
+  },
+  {
+    "row_index": 3,
+    "input_data": {
+      "input": "8 ounce of strawberry smoothie",
+      "language": "en",
+      "region": "us",
+      "language_description": "english",
+      "region_description": "united states",
+      "foods": [
+        {
+          "query": "strawberry smoothie",
+          "results": [
+            {
+              "food_id": "23052323",
+              "food_name": "Strawberry Smoothie",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "75512299",
+              "food_name": "Strawberry Smoothie - Medium",
+              "brand_name": "Orange Julius",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "80887",
+              "food_name": "Low Calorie Soulful Strawberry Smoothie (Regular)",
+              "brand_name": "Freshens",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "105067014",
+              "food_name": "Strawberry Smoothie (24 oz)",
+              "brand_name": "Jack in the Box",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "105067750",
+              "food_name": "Strawberry Smoothie (16 oz)",
+              "brand_name": "Jack in the Box",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "169848",
+              "food_name": "Strawberry Smoothie",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "75512316",
+              "food_name": "Strawberry Smoothie - Small",
+              "brand_name": "Orange Julius",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "98466790",
+              "food_name": "Strawberry Smoothie",
+              "brand_name": "Wawa",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "86296819",
+              "food_name": "Strawberry Smoothie (Small)",
+              "brand_name": "Baskin-Robbins",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "2401156",
+              "food_name": "Strawberry Banana Smoothie",
+              "brand_name": "Kroger",
+              "food_type": "Brand"
+            }
+          ]
+        }
+      ]
+    },
+    "invocation_time": 0.9094979763031006,
+    "extracted_foods": {
+      "input": "8 ounce of strawberry smoothie",
+      "food_ids": [
+        "23052323"
+      ],
+      "queries": [
+        "strawberry smoothie"
+      ],
+      "language": "en",
+      "region": "us",
+      "language_description": "english",
+      "region_description": "united states",
+      "include_servings": "defaultAndGrams"
+    },
+    "cost": 6.922999999999999e-05,
+    "input_tokens": 1622,
+    "output_tokens": 89
+  },
+  {
+    "row_index": 4,
+    "input_data": {
+      "input": "1 teaspoon of Jif peanut butter",
+      "language": "en",
+      "region": "us",
+      "language_description": "english",
+      "region_description": "united states",
+      "foods": [
+        {
+          "query": "Jif peanut butter",
+          "results": [
+            {
+              "food_id": "4055473",
+              "food_name": "Creamy Peanut Butter",
+              "brand_name": "Jif",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "302993",
+              "food_name": "Natural Creamy Peanut Butter",
+              "brand_name": "Jif",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "28973",
+              "food_name": "Extra Crunchy Peanut Butter",
+              "brand_name": "Jif",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "7356799",
+              "food_name": "Creamy Peanut Butter",
+              "brand_name": "Jif",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "51530",
+              "food_name": "Reduced Fat Creamy Peanut Butter",
+              "brand_name": "Jif",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "41085911",
+              "food_name": "No Sugar Added Creamy Peanut Butter",
+              "brand_name": "Jif",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "1422905",
+              "food_name": "Extra Crunchy Peanut Butter",
+              "brand_name": "Jif",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "1971641",
+              "food_name": "Natural Crunchy Peanut Butter",
+              "brand_name": "Jif",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "8177388",
+              "food_name": "Low Sodium Natural Creamy Peanut Butter",
+              "brand_name": "Jif",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "5881242",
+              "food_name": "To Go Creamy Peanut Butter",
+              "brand_name": "Jif",
+              "food_type": "Brand"
+            }
+          ]
+        }
+      ]
+    },
+    "invocation_time": 0.8945014476776123,
+    "extracted_foods": {
+      "input": "1 teaspoon of Jif peanut butter",
+      "food_ids": [
+        "4055473"
+      ],
+      "queries": [
+        "Jif peanut butter"
+      ],
+      "language": "en",
+      "region": "us",
+      "language_description": "english",
+      "region_description": "united states",
+      "include_servings": "defaultAndGrams"
+    },
+    "cost": 6.8635e-05,
+    "input_tokens": 1609,
+    "output_tokens": 88
+  },
+  {
+    "row_index": 5,
+    "input_data": {
+      "input": "2 cups of Trader Joe's low-fat kefir",
+      "language": "en",
+      "region": "us",
+      "language_description": "english",
+      "region_description": "united states",
+      "foods": [
+        {
+          "query": "Trader Joe's low-fat kefir",
+          "results": [
+            {
+              "food_id": "14820902",
+              "food_name": "Low Fat Plain Kefir",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "20350785",
+              "food_name": "Low Fat Milk",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "22747349",
+              "food_name": "Greek Low Fat Yogurt",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "84828",
+              "food_name": "Low Fat French Toast",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "79530",
+              "food_name": "Low Fat Chocolate Yogurt",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "60368",
+              "food_name": "Low Fat Cottage Cheese",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "2630767",
+              "food_name": "Low Fat Chocolate Milk",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "235475",
+              "food_name": "Low Fat Blueberry Bran Muffins",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "123100",
+              "food_name": "Low Fat Orange Cranberry Bread",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "101850",
+              "food_name": "Low Fat Parmesan Ranch Dressing",
+              "brand_name": "Trader Joe's",
+              "food_type": "Brand"
+            }
+          ]
+        }
+      ]
+    },
+    "invocation_time": 0.8988792896270752,
+    "extracted_foods": {
+      "input": "2 cups of Trader Joe's low-fat kefir",
+      "food_ids": [
+        "14820902"
+      ],
+      "queries": [
+        "Trader Joe's low-fat kefir"
+      ],
+      "language": "en",
+      "region": "us",
+      "language_description": "english",
+      "region_description": "united states",
+      "include_servings": "defaultAndGrams"
+    },
+    "cost": 7.0385e-05,
+    "input_tokens": 1623,
+    "output_tokens": 97
+  },
+  {
+    "row_index": 6,
+    "input_data": {
+      "input": "\u0422\u0432\u043e\u0440\u043e\u0433 \u043e\u0431\u0435\u0437\u0436\u0438\u0440\u0435\u043d\u043d\u044b\u0439 140 \u0433",
+      "language": "ru",
+      "region": "ru",
+      "language_description": "russian",
+      "region_description": "russia",
+      "foods": [
+        {
+          "query": "\u0442\u0432\u043e\u0440\u043e\u0433 \u043e\u0431\u0435\u0437\u0436\u0438\u0440\u0435\u043d\u043d\u044b\u0439",
+          "results": [
+            {
+              "food_id": "5931804",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0433 (\u041e\u0431\u0435\u0437\u0436\u0438\u0440\u0435\u043d\u043d\u044b\u0439)",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "33298009",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0433 \u041e\u0431\u0435\u0437\u0436\u0438\u0440\u0435\u043d\u043d\u044b\u0439",
+              "brand_name": "\u0421\u0442\u0430\u043d\u0446\u0438\u044f \u041c\u043e\u043b\u043e\u0447\u043d\u0430\u044f",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "5430166",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0433 \u0418\u0440\u0431\u0438\u0442\u0441\u043a\u0438\u0439 \u041e\u0431\u0435\u0437\u0436\u0438\u0440\u0435\u043d\u043d\u044b\u0439",
+              "brand_name": "\u0418\u0440\u0431\u0438\u0442\u0441\u043a\u0438\u0439 \u041c\u043e\u043b\u043e\u0447\u043d\u044b\u0439 \u0417\u0430\u0432\u043e\u0434",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "29148785",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0433 \u041e\u0431\u0435\u0437\u0436\u0438\u0440\u0435\u043d\u043d\u044b\u0439 0,5%",
+              "brand_name": "\u0421\u0435\u043b\u043e \u0417\u0435\u043b\u0451\u043d\u043e\u0435",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "3489687",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0433 \u041e\u0431\u0435\u0437\u0436\u0438\u0440\u0435\u043d\u043d\u044b\u0439",
+              "brand_name": "\u041a\u0443\u0431\u0430\u043d\u0441\u043a\u0438\u0439 \u041c\u043e\u043b\u043e\u0447\u043d\u0438\u043a",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "5058638",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0433 \u041e\u0431\u0435\u0437\u0436\u0438\u0440\u0435\u043d\u043d\u044b\u0439 0,5%",
+              "brand_name": "\u0412\u043a\u0443\u0441\u043d\u043e\u0442\u0435\u0435\u0432\u043e",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "5003838",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0433 \u041e\u0431\u0435\u0437\u0436\u0438\u0440\u0435\u043d\u043d\u044b\u0439 0%",
+              "brand_name": "\u0421\u0430\u0432\u0443\u0448\u043a\u0438\u043d \u041f\u0440\u043e\u0434\u0443\u043a\u0442",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "33694",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0433 (\u041f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u041e\u0431\u0435\u0437\u0436\u0438\u0440\u0435\u043d\u043d\u044b\u0439)",
+              "food_type": "Generic"
+            },
+            {
+              "food_id": "3485676",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0433 \u041e\u0431\u0435\u0437\u0436\u0438\u0440\u0435\u043d\u043d\u044b\u0439",
+              "brand_name": "\u041a\u043e\u0440\u043e\u0432\u043a\u0430 \u0438\u0437 \u041a\u043e\u0440\u0435\u043d\u043e\u0432\u043a\u0438",
+              "food_type": "Brand"
+            },
+            {
+              "food_id": "25512935",
+              "food_name": "\u0422\u0432\u043e\u0440\u043e\u0433 \u041e\u0431\u0435\u0437\u0436\u0438\u0440\u0435\u043d\u043d\u044b\u0439 1%",
+              "brand_name": "\u041a\u0440\u0430\u0441\u043d\u0430\u044f \u0426\u0435\u043d\u0430",
+              "food_type": "Brand"
+            }
+          ]
+        }
+      ]
+    },
+    "invocation_time": 1.6558434963226318,
+    "extracted_foods": {
+      "input": "\u0422\u0432\u043e\u0440\u043e\u0433 \u043e\u0431\u0435\u0437\u0436\u0438\u0440\u0435\u043d\u043d\u044b\u0439 140 \u0433",
+      "food_ids": [
+        "5931804"
+      ],
+      "queries": [
+        "\u0422\u0432\u043e\u0440\u043e\u0433 \u043e\u0431\u0435\u0437\u0436\u0438\u0440\u0435\u043d\u043d\u044b\u0439"
+      ],
+      "language": "ru",
+      "region": "ru",
+      "language_description": "russian",
+      "region_description": "russia",
+      "include_servings": "defaultAndGrams"
+    },
+    "cost": 0.00016971499999999997,
+    "input_tokens": 3637,
+    "output_tokens": 303
+  }
+]

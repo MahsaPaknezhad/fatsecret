@@ -1,0 +1,173 @@
+[
+  {
+    "row_index": 0,
+    "total_time": 12.849894523620605,
+    "food_count": 6,
+    "individual_results": [
+      {
+        "food_query": 33398452,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      },
+      {
+        "food_query": 35752,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      },
+      {
+        "food_query": 1328288,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      },
+      {
+        "food_query": 35849,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      },
+      {
+        "food_query": 5526,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      },
+      {
+        "food_query": 10811554,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      }
+    ],
+    "ingredients": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again. ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again. ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again. ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again. ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again. ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+    "total_cost": 0
+  },
+  {
+    "row_index": 1,
+    "total_time": 17.934619665145874,
+    "food_count": 7,
+    "individual_results": [
+      {
+        "food_query": 39866,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      },
+      {
+        "food_query": 7397074,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      },
+      {
+        "food_query": 33908,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      },
+      {
+        "food_query": 7175,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      },
+      {
+        "food_query": 7331,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      },
+      {
+        "food_query": 2811717,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      },
+      {
+        "food_query": 3447997,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      }
+    ],
+    "ingredients": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again. ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again. ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again. ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again. ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again. ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again. ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+    "total_cost": 0
+  },
+  {
+    "row_index": 2,
+    "total_time": 16.62286114692688,
+    "food_count": 1,
+    "individual_results": [
+      {
+        "food_query": 90178387,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      }
+    ],
+    "ingredients": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+    "total_cost": 0
+  },
+  {
+    "row_index": 3,
+    "total_time": 11.942861080169678,
+    "food_count": 1,
+    "individual_results": [
+      {
+        "food_query": 23052323,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      }
+    ],
+    "ingredients": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+    "total_cost": 0
+  },
+  {
+    "row_index": 4,
+    "total_time": 21.051323175430298,
+    "food_count": 1,
+    "individual_results": [
+      {
+        "food_query": 302993,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      }
+    ],
+    "ingredients": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+    "total_cost": 0
+  },
+  {
+    "row_index": 5,
+    "total_time": 20.096694707870483,
+    "food_count": 1,
+    "individual_results": [
+      {
+        "food_query": 14820902,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      }
+    ],
+    "ingredients": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+    "total_cost": 0
+  },
+  {
+    "row_index": 6,
+    "total_time": 25.413381814956665,
+    "food_count": 1,
+    "individual_results": [
+      {
+        "food_query": 5931804,
+        "actual": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+        "invocation_time": null,
+        "cost": null
+      }
+    ],
+    "ingredients": "ERROR: An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many tokens, please wait before trying again.",
+    "total_cost": 0
+  }
+]

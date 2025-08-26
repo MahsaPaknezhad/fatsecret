@@ -4,6 +4,7 @@ import boto3
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from threading import Semaphore
+import itertools
 
 # Read system prompt
 with open('prompts/prompt3_old.txt', 'r', encoding='utf-8') as f:
@@ -14,41 +15,54 @@ df = pd.read_csv('data/test_data_clean.csv')
 test_data = df[['Prompt 3 - match sizes Input', 'Prompt 3 - match sizes Output']].to_dict('records')
 client = boto3.client("bedrock-runtime", region_name="us-west-2")
 
-# Rate limiting semaphore
-rate_limiter = Semaphore(10)  # Max 3 concurrent requests
+# Available models to cycle through
+models = [
+    "us.meta.llama4-maverick-17b-instruct-v1:0",
+    "amazon.nova-lite-v1:0",
+    "amazon.nova-micro-v1:0",
+    "amazon.nova-lite-v1:0",
+    "amazon.nova-micro-v1:0",
+    "amazon.nova-pro-v1:0"
+]
 
-def invoke_food(food_item, user_message):
-    with rate_limiter:
-        print(food_item)
-        try:
-            start_time = time.time()
-            response = client.converse(
-                modelId="us.meta.llama4-maverick-17b-instruct-v1:0",
-                messages=[{"role": "user", "content": [{"text": system_prompt.replace("{{foods}}",user_message)}]}],
-                inferenceConfig={"maxTokens": 2048, "temperature": 0.1, "topP": 0.9}
-            )
-            invocation_time = time.time() - start_time
-            
-            response_text = response["output"]["message"]["content"][0]["text"]
-            input_tokens = response["usage"]["inputTokens"]
-            output_tokens = response["usage"]["outputTokens"]
-            cost = (input_tokens * 0.00024 / 1000) + (output_tokens * 0.00097 / 1000)
-            
-            #time.sleep(0.1)  # Small delay to prevent rate limiting
-            
-            return {
-                "food_query": food_item['query'],
-                "actual": response_text,
-                "invocation_time": invocation_time,
-                "cost": cost
-            }
-        except Exception as e:
-            return {
-                "food_query": food_item['query'],
-                "actual": f"ERROR: {str(e)}",
-                "invocation_time": None,
-                "cost": None
-            }
+# Create a cycle iterator for models
+model_cycle = itertools.cycle(models)
+
+# Rate limiting semaphore
+# rate_limiter = Semaphore(10)
+
+def invoke_food(food_item, user_message, model_id):
+    #with rate_limiter:
+    print(f"{food_item['query']} - {model_id}")
+    try:
+        start_time = time.time()
+        response = client.converse(
+            modelId=model_id,
+            messages=[{"role": "user", "content": [{"text": system_prompt.replace("{{foods}}",user_message)}]}],
+            inferenceConfig={"maxTokens": 2048, "temperature": 0.1, "topP": 0.9}
+        )
+        invocation_time = time.time() - start_time
+        
+        response_text = response["output"]["message"]["content"][0]["text"]
+        input_tokens = response["usage"]["inputTokens"]
+        output_tokens = response["usage"]["outputTokens"]
+        cost = (input_tokens * 0.00024 / 1000) + (output_tokens * 0.00097 / 1000)
+        
+        return {
+            "food_query": food_item['query'],
+            "model_id": model_id,
+            "actual": response_text,
+            "invocation_time": invocation_time,
+            "cost": cost
+        }
+    except Exception as e:
+        return {
+            "food_query": food_item['query'],
+            "model_id": model_id,
+            "actual": f"ERROR: {str(e)}",
+            "invocation_time": None,
+            "cost": None
+        }
 
 all_results = []
 
@@ -57,7 +71,7 @@ for row_idx, test_case in enumerate(test_data):
     
     input_data = json.loads(test_case['Prompt 3 - match sizes Input'])
     
-    # Prepare tasks for this row
+    # Prepare tasks for this row with different models
     tasks = []
     for food_item in input_data['foods']:
         single_food_input = {
@@ -70,7 +84,8 @@ for row_idx, test_case in enumerate(test_data):
             "foods": [food_item]
         }
         user_message = json.dumps(single_food_input, indent=2)
-        tasks.append((food_item, user_message))
+        model_id = next(model_cycle)  # Get next model in cycle
+        tasks.append((food_item, user_message, model_id))
     
     # Process with limited concurrency
     row_start_time = time.time()
@@ -98,7 +113,7 @@ for row_idx, test_case in enumerate(test_data):
     all_results.append(row_summary)
     print(f"Row {row_idx + 1} completed in {row_total_time:.2f}s with {len(input_data['foods'])} foods")
 
-with open('outputs3/3_match_sizes_optimized_parallel.json', 'w') as f:
+with open('outputs3/3_match_sizes_multi_model.json', 'w') as f:
     json.dump(all_results, f, indent=2)
 
 print(f"Completed all {len(test_data)} rows")

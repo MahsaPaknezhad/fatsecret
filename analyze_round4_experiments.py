@@ -22,10 +22,10 @@ def load_experiment_data(folder_path):
                 data = json.load(f)
                 
             # Aggregate metrics for this run
-            total_cost = sum(item.get('cost', 0) or 0 for item in data)
-            total_latency = sum(item.get('invocation_time', 0) or 0 for item in data)
-            total_input_tokens = sum(item.get('input_tokens', 0) or 0 for item in data)
-            total_output_tokens = sum(item.get('output_tokens', 0) or 0 for item in data)
+            total_cost = sum(item.get('cost', 0) or 0 for item in data)/len(data)
+            total_latency = sum(item.get('invocation_time', 0) or 0 for item in data)/len(data)
+            total_input_tokens = sum(item.get('input_tokens', 0) or 0 for item in data)/len(data)
+            total_output_tokens = sum(item.get('output_tokens', 0) or 0 for item in data)/len(data)
             
             experiments[exp_name][run_num] = {
                 'total_cost': total_cost,
@@ -197,7 +197,7 @@ def print_summary_stats(experiments):
         print(f"  {row['experiment']}: {row['avg_output_tokens']:.0f} (±{row['std_output_tokens']:.0f})")
 
 # Main execution
-folder_path = '/home/ubuntu/projects/fatsecret/outputs/round4'
+folder_path = '/home/ubuntu/projects/fatsecret/outputs3/round4'
 experiments = load_experiment_data(folder_path)
 
 print_summary_stats(experiments)

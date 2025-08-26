@@ -42,8 +42,6 @@ Available Languages:
 ""uk"" for: Ukrainian""
 </availableLanguages>
 
-JSON: {{search_results}}
-
 ---### **Your Tasks** ####
 **1. Match Food** - Match each food query with only one food that is the most appropriate food in `foods.results` using these rules:
 - If Brand is mentioned: **exact food name + brand → exact generic food name → exact other brand → first search result.**
@@ -58,13 +56,15 @@ JSON: {{search_results}}
 - When generating the JSON, write all text using the original script and characters (UTF-8). Do not escape non-ASCII characters into \uXXXX notation. The ""input"" field must be identical to ""chat_input"" from the input JSON.
 
 The output object should be:
-{
-""input"": ""<original input>"",
-""food_ids"": [must be a json list of big int, one per query, of the exact/direct matches ids as a comma separated],
-""queries"": [must be a json list of strings, one per query],
-""language"": ""ONLY the language value from the list above"",
-""region"": ""ONLY the region value (ISO 3166-1 alpha-2 standard code) (e.g., en, en-au)"",
-""language_description"": ""the language description value (e.g., English, English (Regional), French)"",
-""region_description"": ""the region description value (e.g., Australia, United States, United Kingdom)"",
-""include_servings"" = ""defaultAndGrams""
-}"
+{[
+    "input"": "original input",
+    "food_ids": [must be a json list of big int, one per query, of the exact/direct matches ids as a comma separated],
+    "queries": [must be a json list of strings, one per query],
+    "language": "ONLY the language value from the list above",
+    "region": "ONLY the region value (ISO 3166-1 alpha-2 standard code) (e.g., en, en-au)",
+    "language_description": "the language description value (e.g., English, English (Regional), French)",
+    "region_description": "the region description value (e.g., Australia, United States, United Kingdom)",
+    "include_servings" : "defaultAndGrams"
+]}
+
+JSON: 

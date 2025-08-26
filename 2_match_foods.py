@@ -4,13 +4,13 @@ import boto3
 import time
 
 # Read system prompt
-with open('/home/ubuntu/projects/fatsecret/prompts/prompt1.txt', 'r', encoding='utf-8') as f:
+with open('/home/ubuntu/projects/fatsecret/prompts/prompt2.txt', 'r', encoding='utf-8') as f:
     system_prompt = f.read().strip().strip('"')
 
 
 # Read test data
 df = pd.read_csv('/home/ubuntu/projects/fatsecret/data/test_data_clean.csv')
-test_data = df[['Prompt 1 - Extract foods Input', 'Prompt 1 - Extract foods Output']].to_dict('records')
+test_data = df[['Prompt 2 - match foods Input', 'Prompt 2 - match foods Output']].to_dict('records')
 
 # Read models from step1.csv
 models_df = pd.read_csv('/home/ubuntu/projects/fatsecret/data/models/step1.csv')
@@ -89,7 +89,7 @@ for model_config in models:
         for row_idx, test_case in enumerate(test_data):
             print(f"Processing row {row_idx + 1}/{len(test_data)}")
             
-            input_data = json.loads(test_case['Prompt 1 - Extract foods Input'])
+            input_data = json.loads(test_case['Prompt 2 - match foods Input'])
             result = invoke_batch(input_data, model_id, region, use_cache, model_config)
             
             row_summary = {
@@ -109,7 +109,7 @@ for model_config in models:
             if row_idx < len(test_data) - 1:
                 time.sleep(1)
 
-        with open(f'/home/ubuntu/projects/fatsecret/outputs/1_extract_foods_{model_name}{cache_suffix}_3.json', 'w') as f:
+        with open(f'/home/ubuntu/projects/fatsecret/outputs2/2_match_foods_{model_name}{cache_suffix}_3.json', 'w') as f:
             json.dump(all_results, f, indent=2)
 
         print(f"Completed {model_id}{cache_suffix}")

@@ -7,20 +7,20 @@ import numpy as np
 def analyze_experiments():
     experiments = {}
     
-    for filename in os.listdir('outputs/round4'):
+    for filename in os.listdir('outputs3/round4'):
         if filename.endswith('.json'):
             parts = filename.replace('.json', '').split('_')
             exp_name = '_'.join(parts[:-1]).replace('3_match_sizes_batch_', '')
             run_num = int(parts[-1])
             
-            with open(f'outputs/round4/{filename}', 'r') as f:
+            with open(f'outputs3/round4/{filename}', 'r') as f:
                 data = json.load(f)
             
             # Calculate metrics
-            total_cost = sum(item.get('cost', 0) or 0 for item in data)
-            total_latency = sum(item.get('invocation_time', 0) or 0 for item in data)
-            total_input = sum(item.get('input_tokens', 0) or 0 for item in data)
-            total_output = sum(item.get('output_tokens', 0) or 0 for item in data)
+            total_cost = sum(item.get('cost', 0) or 0 for item in data)/len(data)
+            total_latency = sum(item.get('invocation_time', 0) or 0 for item in data)/len(data)
+            total_input = sum(item.get('input_tokens', 0) or 0 for item in data)/len(data)
+            total_output = sum(item.get('output_tokens', 0) or 0 for item in data)/len(data)
             total_tokens = total_input + total_output
             
             if exp_name not in experiments:
